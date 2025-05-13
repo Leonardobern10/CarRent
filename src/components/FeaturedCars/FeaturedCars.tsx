@@ -1,7 +1,7 @@
 import type { ReactElement } from "react";
 import TitleSection from "../TitleSection";
 import CarAd from "./CarAd";
-import type { CarInfo } from "@/model/CarInfo";
+import type { CarInfo } from "@/model/CarInfoType";
 
 export default function FeaturedCars(props: {
   allCars: Array<CarInfo>;
