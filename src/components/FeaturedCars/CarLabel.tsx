@@ -4,9 +4,9 @@ import type { ReactElement } from "react";
 export default function CarLabel(props: { data: CarLabelType }): ReactElement {
   const Icon = props.data.icon;
   return (
-    <div className="flex flex-row justify-between items-center gap-x-2 font-poppins text-black-medium/80 font-semibold">
-      <Icon className="h-6 w-6" />
-      <p className="text-xl">{props.data.content}</p>
+    <div className="flex flex-row justify-between items-center gap-x-1 font-poppins">
+      <Icon className="text-black/50 h-4 w-4" />
+      <p className="text-sm font-medium/5 text-black">{props.data.content}</p>
     </div>
   );
 }

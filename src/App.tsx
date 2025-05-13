@@ -2,6 +2,7 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import BookNow from "./components/Book/BookNow";
 import FeaturedCars from "./components/FeaturedCars/FeaturedCars";
 import Presentation from "./components/Presentation/Presentation";
+import allDataCars from "./data/dataCarAd";
 
 export default function App() {
   return (
@@ -9,7 +10,7 @@ export default function App() {
       <Presentation />
       <AboutUs />
       <BookNow />
-      <FeaturedCars />
+      <FeaturedCars allCars={allDataCars} />
       <div></div>
       <div></div>
       <div></div>
