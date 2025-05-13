@@ -8,7 +8,7 @@ import {
   FaTelegram,
   FaSquareWhatsapp,
 } from "react-icons/fa6";
-import type { DATA_PRESENTATION } from "../../data/dataPresentation";
+import type { DATA_PRESENTATION } from "@/model/DataPresentationType";
 
 export default function Main(props: { data: DATA_PRESENTATION }): ReactElement {
   return (
