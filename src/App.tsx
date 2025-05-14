@@ -1,5 +1,6 @@
 import AboutUs from "./components/AboutUs/AboutUs";
 import BookNow from "./components/Book/BookNow";
+import ContactUs from "./components/ContactUs/ContactUs";
 import FeaturedCars from "./components/FeaturedCars/FeaturedCars";
 import Info from "./components/Info/Info";
 import PremiumServices from "./components/PremiumServices/PremiumServices";
@@ -9,7 +10,7 @@ import allDataCars from "./data/dataCarAd";
 
 export default function App() {
   return (
-    <div className="grid grid-cols-7 grid-rows-10 gap-y-15 justify-between h-full">
+    <div className="grid grid-cols-7 grid-rows-9 gap-y-15 justify-between h-full">
       <Presentation />
       <AboutUs />
       <BookNow />
@@ -17,6 +18,7 @@ export default function App() {
       <PremiumServices />
       <Rating />
       <Info />
+      <ContactUs />
     </div>
   );
 }
