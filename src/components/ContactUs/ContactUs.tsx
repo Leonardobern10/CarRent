@@ -5,7 +5,7 @@ import keyImage from "../../assets/images/key_image.png";
 
 export default function ContactUs(): ReactElement {
   return (
-    <section className="row-span-1 col-span-7 bg-linear-to-t from-60% from-black-medium to-60% to-white-background flex flex-col justify-between items-center font-poppins">
+    <section className="row-span-8 col-span-7 bg-linear-to-t from-60% from-black-medium to-60% to-white-background flex flex-col gap-y-4 justify-between items-center font-poppins mt-18">
       <TitleSection text="Contact Us" />
       <div className="flex flex-row h-4/5 w-5/6 bg-white-background">
         <form
