@@ -22,7 +22,7 @@ export default function AboutUs(): ReactElement {
             <Button
               buttonName="Read more"
               width="fit-content"
-              fontSize="1.5rem"
+              fontSize="1.2rem"
             />
           </div>
         </div>
