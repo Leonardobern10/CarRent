@@ -17,7 +17,7 @@ export default function Button(props: {
         backgroundColor: `${props.backgroundColor}`,
         color: `${props.color}`,
       }}
-      className="bg-orange-primary rounded-sm p-4 text-sm font-poppins font-bold text-black-medium hover:cursor-pointer hover:bg-black-medium hover:text-bege transition-colors"
+      className="bg-orange-primary rounded-sm p-2 text-sm font-poppins font-bold text-black-medium hover:cursor-pointer hover:bg-black-medium hover:text-bege transition-colors"
     >
       {props.buttonName}
     </button>

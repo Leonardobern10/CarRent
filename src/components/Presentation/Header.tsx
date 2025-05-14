@@ -17,7 +17,7 @@ export default function Header() {
         </nav>
 
         <div className="mr-15">
-          <Button buttonName="Login | Sign Up" />
+          <Button height="2rem" fontSize=".7rem" buttonName="Login | Sign Up" />
         </div>
       </div>
     </div>

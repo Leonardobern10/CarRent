@@ -32,9 +32,9 @@ export default function Main(props: { data: DATA_PRESENTATION }): ReactElement {
           <h3 className="w-6/7 text-white-dark/70">{props.data.SUBTITTLE}</h3>
           <Button
             buttonName="Explore Now"
-            width="50%"
-            height="4.5rem"
-            fontSize="2rem"
+            width="40%"
+            height="3rem"
+            fontSize="1.2rem"
           />
         </div>
       </div>

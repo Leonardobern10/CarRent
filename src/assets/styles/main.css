@@ -39,11 +39,11 @@
 
 @layer base {
   h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
   }
   h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
   }
 }
@@ -52,7 +52,7 @@
   @apply border-[1px] bg-gray-500/20 rounded-full h-4 w-4;
 }
 .icon-network {
-  @apply w-7 h-7 rounded-xl text-orange-primary hover:cursor-pointer hover:scale-110 hover:transition-transform;
+  @apply w-4 h-4 rounded-xl text-orange-primary hover:cursor-pointer hover:scale-110 hover:transition-transform;
 }
 
 .select {
