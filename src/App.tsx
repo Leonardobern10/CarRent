@@ -7,21 +7,12 @@ import allDataCars from "./data/dataCarAd";
 
 export default function App() {
   return (
-    <div className="grid grid-cols-7 grid-rows-20 gap-y-15 justify-between w-screen h-full">
+    <div className="grid grid-cols-7 grid-rows-10 gap-y-15 justify-between h-full">
       <Presentation />
       <AboutUs />
       <BookNow />
       <FeaturedCars allCars={allDataCars} />
       <PremiumServices />
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
     </div>
   );
 }

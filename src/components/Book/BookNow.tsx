@@ -1,30 +1,55 @@
 import type { ReactElement } from "react";
 import TitleSection from "../TitleSection";
 import Button from "../Button";
+import SelectComponent from "../Select";
+import SelectDate from "../SelectDate";
+import generateHours from "../../service/generateHours";
 
 export default function BookNow(): ReactElement {
+  const cities = [
+    "Rio de Janeiro",
+    "Belo Horizonte",
+    "São Paulo",
+    "Florianopolis",
+  ];
+
+  const carType = ["Eletric", "Hybrid", "Gasoline"];
+
   return (
-    <div className="border-2 col-span-7 flex flex-col justify-between items-center gap-y-5">
+    <div className="col-span-7 row-span-1 flex flex-col justify-start items-center gap-y-5">
       <TitleSection text="Book Now" />
-      <div className="w-screen h-5/6 bg-bege">
-        <form action="" className="grid grid-col-5 grid-row-2">
-          <select
-            className="select col-start-2 col-end-5"
-            name="pickup-location"
-            id="pickup-location"
-          >
-            <option value="Rio de Janeiro">Rio de Janeiro</option>
-            <option value="São Paulo">São Paulo</option>
-            <option value="Minas Gerais">Minas Gerais</option>
-          </select>
-          <select className="select" name="" id="">
-            <option value="pickup_date">pickup_date</option>
-          </select>
-          <select className="select" name="" id=""></select>
-          <select className="select" name="" id=""></select>
-          <select className="select" name="" id=""></select>
-          <select className="select" name="" id=""></select>
-          <Button buttonName="Book Now" />
+      <div className="flex items-center justify-center w-screen h-5/9 bg-bege">
+        <form
+          action=""
+          className=" w-5/7 h-full flex flex-col justify-center items-center gap-y-7"
+        >
+          <div className="w-full flex fle-row items-center justify-evenly">
+            <SelectComponent
+              placeholder="Pickup Location"
+              selectLabel="Cidades"
+              value={cities}
+            />
+            <SelectDate selectLabel="Pickup Date" />
+            <SelectDate selectLabel="Return Date" />
+          </div>
+          <div className="w-full flex fle-row items-center justify-evenly">
+            <SelectComponent
+              placeholder="Car Type"
+              selectLabel="Types"
+              value={carType}
+            />
+            <SelectComponent
+              placeholder="Pickup Time"
+              selectLabel="Time"
+              value={generateHours()}
+            />
+            <SelectComponent
+              placeholder="Return Time"
+              selectLabel="Time"
+              value={generateHours()}
+            />
+            <Button buttonName="Book Now" height="3rem" width="8rem" />
+          </div>
         </form>
       </div>
     </div>
