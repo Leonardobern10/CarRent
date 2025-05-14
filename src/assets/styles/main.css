@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
-@import "./App.css";
-@import "./presentation.css";
-@import "./aboutus.css";
 @import "tw-animate-css";
 /* ---break---*/
 @custom-variant dark (&:is(.dark *));
@@ -51,16 +48,20 @@
 .circle {
   @apply border-[1px] bg-gray-500/20 rounded-full h-4 w-4;
 }
+.icon-footer {
+  @apply h-10 w-10 rounded-xl text-orange-primary hover:cursor-pointer hover:scale-110 hover:transition-transform;
+}
 .icon-network {
   @apply w-4 h-4 rounded-xl text-orange-primary hover:cursor-pointer hover:scale-110 hover:transition-transform;
 }
-
 .input {
   @apply border-2 w-100 p-4;
 }
-
 .select {
   @apply w-40 bg-white-background px-2 py-4 whitespace-nowrap;
+}
+.logo {
+  @apply w-[40%] text-orange-primary text-2xl font-kanit font-bold tracking-widest;
 }
 
 /* ---break---*/
