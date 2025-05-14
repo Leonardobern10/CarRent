@@ -12,21 +12,13 @@ export default function ContactUs(): ReactElement {
           action=""
           className="w-1/2 flex flex-col justify-center items-center gap-y-10"
         >
-          <input
-            type="text"
-            placeholder="Your name*"
-            className="border-2 w-100 p-4"
-          />
-          <input
-            type="text"
-            placeholder="Your email*"
-            className="border-2 w-100 p-4"
-          />
+          <input type="text" placeholder="Your name*" className="input" />
+          <input type="text" placeholder="Your email*" className="input" />
           <textarea
             name=""
             id=""
             placeholder="Your Message"
-            className="border-2 w-100 p-4"
+            className="input"
           />
           <Button buttonName="Send A Message" width="15rem" height="4rem" />
         </form>

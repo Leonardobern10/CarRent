@@ -19,6 +19,7 @@ export default function App() {
       <Rating />
       <Info />
       <ContactUs />
+      <Footer />
     </div>
   );
 }

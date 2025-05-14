@@ -55,6 +55,10 @@
   @apply w-4 h-4 rounded-xl text-orange-primary hover:cursor-pointer hover:scale-110 hover:transition-transform;
 }
 
+.input {
+  @apply border-2 w-100 p-4;
+}
+
 .select {
   @apply w-40 bg-white-background px-2 py-4 whitespace-nowrap;
 }
