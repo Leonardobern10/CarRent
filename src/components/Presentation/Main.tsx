@@ -12,7 +12,7 @@ import type { DATA_PRESENTATION } from "@/model/DataPresentationType";
 
 export default function Main(props: { data: DATA_PRESENTATION }): ReactElement {
   return (
-    <main className="flex items-center h-[70%] main-background text-white-dark font-poppins">
+    <main className="flex items-center h-[70%] main-background text-white-dark font-poppins mt-7 ">
       <div className="flex flex-row justify-evenly items-center w-[47%] z-1 h-[80%]">
         <div className="w-[10%] h-[70%] flex flex-col items-center gap-y-5">
           <VerticalLine />
