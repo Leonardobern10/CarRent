@@ -1,14 +1,16 @@
 import type { ReactElement } from "react";
 import VerticalLine from "./VerticalLine";
 import Button from "../Button";
-import { FaInstagramSquare } from "react-icons/fa";
 import {
-  FaSquareXTwitter,
-  FaSquareFacebook,
-  FaTelegram,
-  FaSquareWhatsapp,
-} from "react-icons/fa6";
+  FaFacebook,
+  FaInstagram,
+  FaWhatsapp,
+  FaLinkedinIn,
+  FaTelegramPlane,
+} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import type { DATA_PRESENTATION } from "@/model/DataPresentationType";
+import IconNetwork from "../IconNetwork";
 
 export default function Main(props: { data: DATA_PRESENTATION }): ReactElement {
   return (
@@ -17,11 +19,12 @@ export default function Main(props: { data: DATA_PRESENTATION }): ReactElement {
         <div className="w-[10%] h-[70%] flex flex-col items-center gap-y-5">
           <VerticalLine />
           <ul className="flex flex-col gap-y-4">
-            <FaInstagramSquare className="icon-network" />
-            <FaSquareXTwitter className="icon-network" />
-            <FaSquareFacebook className="icon-network" />
-            <FaSquareWhatsapp className="icon-network" />
-            <FaTelegram className="icon-network" />
+            <IconNetwork icon={FaInstagram} />
+            <IconNetwork icon={FaFacebook} />
+            <IconNetwork icon={FaXTwitter} />
+            <IconNetwork icon={FaWhatsapp} />
+            <IconNetwork icon={FaLinkedinIn} />
+            <IconNetwork icon={FaTelegramPlane} />
           </ul>
           <VerticalLine />
         </div>
