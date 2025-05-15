@@ -54,6 +54,8 @@ export default function Carrousel(): ReactElement {
             <div className="p-4">
               <Card>
                 <CardContent className="flex aspect-square items-center justify-between p-6">
+                  /* Criação de um componente para poder renderizar conteudos
+                  diferentes */
                   <span className="h-6/7 w-full flex flex-col justify-evenly items-center ">
                     <div className="h-35 w-35">
                       <img
