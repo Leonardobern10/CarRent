@@ -16,7 +16,7 @@ export default function BookNow(): ReactElement {
   const carType = ["Eletric", "Hybrid", "Gasoline"];
 
   return (
-    <div className="col-span-7 row-span-4 h-5/6 flex flex-col justify-center items-center gap-y-5">
+    <div className="col-span-7 row-span-4 h-5/6 flex flex-col justify-center items-center gap-y-10">
       <TitleSection text="Book Now" />
       <div className="flex items-center justify-center w-screen h-5/8 bg-bege">
         <form
