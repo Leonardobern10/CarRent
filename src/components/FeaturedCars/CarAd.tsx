@@ -10,9 +10,9 @@ export default function CarAd(props: {
   image: string;
 }): ReactElement {
   return (
-    <div className="flex flex-col justify-evenly border-2 w-full h-120 gap-y-10 p-4 font-montserrat">
+    <div className="flex flex-col justify-evenly w-full h-120 gap-y-10 p-4 font-montserrat">
       <div className="w-full h-fit flex flex-col justify-between gap-y-3">
-        <img src={props.image} alt="`imagem do ${props.carName}`" />
+        <img src={props.image} alt={`imagem do ${props.carName}`} />
         <p className="text-lg font-semibold">{props.carName}</p>
         <div className="flex flex-row justify-start gap-x-5">
           {props.icons.map((item, index) => {
