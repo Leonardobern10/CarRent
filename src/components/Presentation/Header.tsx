@@ -1,12 +1,11 @@
 import Button from "../Button";
 import ItemHeader from "../ItemHeader";
+import Logo from "../Logo";
 
 export default function Header() {
   return (
     <div className="flex flex-row items-center w-[95%] h-[10%] text-white py-5">
-      <div className="w-[40%] text-center text-orange-primary text-2xl font-kanit font-bold tracking-widest">
-        CARENT
-      </div>
+      <Logo />
       <div className="w-[60%] text-black flex flex-row justify-between px-10 font-montserrat">
         <nav className="flex flex-row justify-between items-center w-[50%]">
           <ItemHeader value="Home" />

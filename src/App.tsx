@@ -11,7 +11,7 @@ import allDataCars from "./data/dataCarAd";
 
 export default function App() {
   return (
-    <div className="grid grid-cols-7 grid-rows-[repeat(50,_100px)] justify-between h-full">
+    <div className="grid grid-cols-7 grid-rows-[repeat(50,_100px)] justify-between h-full w-full p-0 m-0">
       <Presentation />
       <AboutUs />
       <BookNow />
