@@ -5,9 +5,9 @@ import keyImage from "../../assets/images/key_image.png";
 
 export default function ContactUs(): ReactElement {
   return (
-    <section className="row-span-8 col-span-7 bg-linear-to-t from-60% from-black-medium to-60% to-white-background flex flex-col gap-y-4 justify-between items-center font-poppins mt-18 pb-10">
+    <section className="row-span-5 col-span-7 bg-linear-to-t from-60% from-black-medium to-60% to-white-background flex flex-col gap-y-4 justify-center items-center font-poppins">
       <TitleSection text="Contact Us" />
-      <div className="flex flex-row h-4/5 w-5/6 bg-white-background">
+      <div className="flex flex-row h-fit w-5/6 bg-white-background">
         <form
           action=""
           className="w-1/2 flex flex-col justify-center items-center gap-y-10"
@@ -20,7 +20,12 @@ export default function ContactUs(): ReactElement {
             placeholder="Your Message"
             className="input"
           />
-          <Button buttonName="Send A Message" width="15rem" height="4rem" />
+          <Button
+            buttonName="Send A Message"
+            width="15rem"
+            height="4rem"
+            fontSize="1.2rem"
+          />
         </form>
         <div className="w-1/2 p-10">
           <img src={keyImage} className="w-full h-full" alt="" />

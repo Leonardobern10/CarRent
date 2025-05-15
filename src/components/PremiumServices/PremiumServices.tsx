@@ -7,7 +7,7 @@ import { MdOutlineGpsFixed } from "react-icons/md";
 
 export default function PremiumServices(): ReactElement {
   return (
-    <section className="font-poppins col-span-7 row-span-6 flex flex-col items-center gap-y-5 mt-8 pt-8 bg-linear-to-b to-70% to-black-white from-70% from-black-medium">
+    <section className="font-poppins col-span-7 row-span-5 flex flex-col justify-evenly pt-5 items-center gap-y-5 bg-linear-to-b to-70% to-black-white from-70% from-black-medium">
       <TitleSection color="#FFF" text="Our Premmium Services" />
       <div className="w-4/6 h-5/6 flex flex-col justify-evenly items-center">
         <p className="w-3/5 text-white-background text-lg/8 text-center font-extralight">

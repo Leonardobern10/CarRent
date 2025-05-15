@@ -7,7 +7,7 @@ export default function FeaturedCars(props: {
   allCars: Array<CarInfo>;
 }): ReactElement {
   return (
-    <div className="col-start-2 col-end-7 row-span-7 w-full place-items-center justify-items-center">
+    <div className="col-start-2 col-end-7 row-span-6 w-full h-full place-items-center justify-items-center">
       <TitleSection text="Our Featured Cars" />
       <div className="w-full flex flex-col items-center gap-y-10">
         <div className="w-full flex flex-row items-center justify-evenly gap-x-4 mt-10">
