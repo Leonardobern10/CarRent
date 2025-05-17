@@ -11,10 +11,16 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 import type { DATA_PRESENTATION } from "@/model/DataPresentationType";
 import IconNetwork from "../IconNetwork";
+import { motion } from "motion/react";
 
 export default function Main(props: { data: DATA_PRESENTATION }): ReactElement {
   return (
-    <main className="flex items-center h-[70%] main-background text-white-dark font-poppins mt-7 ">
+    <motion.main
+      initial={{ x: -400, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ ease: "easeOut", duration: 1 }}
+      className="flex items-center h-[70%] main-background text-white-dark font-poppins mt-7 "
+    >
       <div className="flex flex-row justify-evenly items-center w-[47%] z-1 h-[80%]">
         <div className="w-[10%] h-[70%] flex flex-col items-center gap-y-5">
           <VerticalLine />
@@ -41,6 +47,6 @@ export default function Main(props: { data: DATA_PRESENTATION }): ReactElement {
           />
         </div>
       </div>
-    </main>
+    </motion.main>
   );
 }
