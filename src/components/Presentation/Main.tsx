@@ -12,8 +12,19 @@ import { FaXTwitter } from "react-icons/fa6";
 import type { DATA_PRESENTATION } from "@/model/DataPresentationType";
 import IconNetwork from "../IconNetwork";
 import { motion } from "motion/react";
+import ContainerIconsNetwork from "./ContainerIconsNetwork";
+import type { IconType } from "react-icons";
 
 export default function Main(props: { data: DATA_PRESENTATION }): ReactElement {
+  const icons: Array<IconType> = [
+    FaInstagram,
+    FaFacebook,
+    FaXTwitter,
+    FaWhatsapp,
+    FaLinkedinIn,
+    FaTelegramPlane,
+  ];
+
   return (
     <motion.main
       initial={{ x: -400, opacity: 0 }}
@@ -24,14 +35,7 @@ export default function Main(props: { data: DATA_PRESENTATION }): ReactElement {
       <div className="flex flex-row justify-evenly items-center w-[47%] z-1 h-[80%]">
         <div className="w-[10%] h-[70%] flex flex-col items-center gap-y-5">
           <VerticalLine />
-          <ul className="flex flex-col gap-y-4">
-            <IconNetwork icon={FaInstagram} />
-            <IconNetwork icon={FaFacebook} />
-            <IconNetwork icon={FaXTwitter} />
-            <IconNetwork icon={FaWhatsapp} />
-            <IconNetwork icon={FaLinkedinIn} />
-            <IconNetwork icon={FaTelegramPlane} />
-          </ul>
+          <ContainerIconsNetwork icons={icons} />
           <VerticalLine />
         </div>
         <div className="flex flex-col justify-around w-[80%] h-full bg-neutral-700/20">
@@ -41,9 +45,9 @@ export default function Main(props: { data: DATA_PRESENTATION }): ReactElement {
           <h3 className="w-6/7 text-white-dark/70">{props.data.SUBTITTLE}</h3>
           <Button
             buttonName="Explore Now"
-            width="40%"
+            width="[40%]"
             height="3rem"
-            fontSize="1.2rem"
+            fontSize="lg"
           />
         </div>
       </div>
