@@ -16,14 +16,14 @@ export default function BookNow(): ReactElement {
   const carType = ["Eletric", "Hybrid", "Gasoline"];
 
   return (
-    <div className="col-span-7 row-span-4 h-5/6 flex flex-col justify-center items-center gap-y-10">
+    <div className="border-2 border-red-600 col-span-7 row-span-8 md:row-span-4 h-full md:h-5/6 flex flex-col justify-evenly md:justify-center items-center gap-y-10">
       <TitleSection text="Book Now" />
-      <div className="flex items-center justify-center w-screen h-5/8 bg-bege">
+      <div className="flex items-center justify-evenly md:justify-center w-screen h-5/8 md:bg-bege">
         <form
           action=""
-          className=" w-5/7 h-full flex flex-col justify-center items-center gap-y-7"
+          className=" w-3/4 md:w-5/7 h-full flex flex-col justify-center items-center gap-y-7"
         >
-          <div className="w-full flex fle-row items-center justify-evenly">
+          <div className="w-full flex flex-col md:flex-row items-center justify-evenly max-md:gap-y-7">
             <SelectComponent
               placeholder="Pickup Location"
               selectLabel="Cidades"
@@ -32,7 +32,7 @@ export default function BookNow(): ReactElement {
             <SelectDate selectLabel="Pickup Date" />
             <SelectDate selectLabel="Return Date" />
           </div>
-          <div className="w-full flex fle-row items-center justify-evenly">
+          <div className="w-full flex flex-col md:flex-row items-center justify-evenly max-md:gap-y-7">
             <SelectComponent
               placeholder="Car Type"
               selectLabel="Types"
@@ -48,7 +48,7 @@ export default function BookNow(): ReactElement {
               selectLabel="Time"
               value={generateHours()}
             />
-            <Button buttonName="Book Now" height="3rem" width="8rem" />
+            <Button buttonName="Book Now" height="12" width="8rem" />
           </div>
         </form>
       </div>

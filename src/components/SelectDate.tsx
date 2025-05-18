@@ -23,7 +23,7 @@ export default function SelectDate(props: {
       <PopoverTrigger asChild>
         <Button
           variant={"outline"}
-          className="p-4 h-13 w-[280px] justify-start font-montserrat text-left text-neutral-900/50 font-normal"
+          className="p-4 h-13 w-8/9 md:w-[280px] justify-start font-montserrat text-center md:text-left text-neutral-900/50 font-normal"
         >
           <CalendarIcon className="mr-2 h-4 w-4" />
           {date ? format(date, "PPP") : <span>{props.selectLabel}</span>}
