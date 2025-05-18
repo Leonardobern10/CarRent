@@ -15,8 +15,8 @@ export default function App() {
       <Presentation />
       <AboutUs />
       <BookNow />
-      {/*
       <FeaturedCars allCars={allDataCars} />
+      {/*
       <PremiumServices />
       <Rating />
       <Info />
