@@ -9,7 +9,9 @@ export default function IconNetwork(props: {
   return (
     <li
       className={`icon-container ${
-        props.footer ? "h-10 w-10 rounded-lg" : "h-5 w-5 rounded-[5px]"
+        props.footer
+          ? "h-10 w-10 rounded-lg"
+          : "h-8 w-8 w:h-5 w:w-5 rounded-[5px]"
       }`}
     >
       <Icon className="icon-base" />
