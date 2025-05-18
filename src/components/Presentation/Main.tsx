@@ -10,7 +10,6 @@ import {
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import type { DATA_PRESENTATION } from "@/model/DataPresentationType";
-import IconNetwork from "../IconNetwork";
 import { motion } from "motion/react";
 import ContainerIconsNetwork from "./ContainerIconsNetwork";
 import type { IconType } from "react-icons";
