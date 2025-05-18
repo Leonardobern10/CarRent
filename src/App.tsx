@@ -13,9 +13,7 @@ export default function App() {
   return (
     <div className="grid grid-cols-7 grid-rows-[repeat(41,_80px)] md:grid-rows-[repeat(41,_100px)] justify-between bg-linear-to-b from-90% from-white to-90% to-black-medium  h-full w-full gap-y-8 content-center scroll-smooth">
       <Presentation />
-      {/*
       <AboutUs />
-            {/*
       <BookNow />
       <FeaturedCars allCars={allDataCars} />
       <PremiumServices />
@@ -23,7 +21,6 @@ export default function App() {
       <Info />
       <ContactUs />
       <Footer />
-      */}
     </div>
   );
 }
