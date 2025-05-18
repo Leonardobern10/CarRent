@@ -2,13 +2,14 @@ import type { ReactElement } from "react";
 
 export default function TitleSection(props: {
   text: string;
-  color?: string;
+  white?: boolean;
 }): ReactElement {
   return (
     <div>
       <h2
-        style={{ color: props.color }}
-        className="text-4xl font-montserrat pb-3 font-medium text-black-medium decoration-orange-primary"
+        className={`text-2xl md:text-4xl font-montserrat pb-3 font-medium ${
+          props.white ? "text-white-dark" : "text-black-medium"
+        } md:text-black-medium decoration-orange-primary`}
       >
         {props.text}
       </h2>

@@ -14,7 +14,7 @@ export default function Presentation(): ReactElement {
   }, [widthScreen]);
 
   return (
-    <div className="flex flex-col bg-[url(/src/assets/images/main_car.png)] bg-blend-color-dodge bg-cover bg-center col-span-7 row-span-6 bg-black-medium md:bg-gradient-to-l md:from-60% md:from-white md:to-60% md:to-black">
+    <div className="flex flex-col bg-[url(/src/assets/images/main_car.png)] bg-blend-color-dodge bg-cover bg-center col-span-7 row-span-7 md:row-span-6 bg-black-medium md:bg-gradient-to-l md:from-60% md:from-white md:to-60% md:to-black">
       <Header />
       {widthScreen > 425 ? <Main data={DATA} /> : <MainMobile data={DATA} />}
     </div>
