@@ -12,9 +12,9 @@ import IconNetwork from "../IconNetwork";
 
 export default function Footer(): ReactElement {
   return (
-    <div className="col-span-7 row-span-1 flex flex-row justify-evenly items-center bg-black-medium border-t-2 border-t-white">
+    <div className="col-span-7 border-2 row-span-2 md:row-span-1 flex flex-col-reverse md:flex-row justify-evenly items-center bg-black-medium border-t-2 border-t-white">
       <Logo left={true} />
-      <ul className="w-1/3 flex flex-row justify-end gap-x-8">
+      <ul className="md:w-1/3 flex flex-row justify-end gap-x-4  md:gap-x-8">
         <IconNetwork footer={true} icon={FaInstagram} />
         <IconNetwork footer={true} icon={FaFacebook} />
         <IconNetwork footer={true} icon={FaXTwitter} />

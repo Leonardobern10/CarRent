@@ -57,7 +57,7 @@
   @apply bg-orange-primary flex items-center justify-center hover:cursor-pointer hover:scale-110 hover:transition-transform;
 }
 .input {
-  @apply border-2 w-100 p-4;
+  @apply border-2 w-60 md:w-100 p-2 md:p-4;
 }
 .select {
   @apply w-40 bg-white-background px-2 py-4 whitespace-nowrap;

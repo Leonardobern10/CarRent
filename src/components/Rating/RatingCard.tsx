@@ -6,8 +6,8 @@ export default function RatingCard(props: {
   rate: string;
 }): ReactElement {
   return (
-    <article className="h-6/7 w-full flex flex-col justify-evenly items-center ">
-      <div className="h-35 w-35">
+    <article className="h-fit md:h-6/7 w-full flex flex-col justify-evenly items-center max-md:gap-y-3">
+      <div className="md:h-35 h-20 md:w-35 w-20">
         <img
           className="rounded-full h-full w-full"
           src={props.image}
@@ -15,9 +15,9 @@ export default function RatingCard(props: {
         />
       </div>
       <div>
-        <p className="text-xl font-semibold">{props.name}</p>
+        <p className="text-lg md:text-xl font-semibold">{props.name}</p>
       </div>
-      <div className="w-5/6 text-sm/relaxed text-black-medium/70">
+      <div className="w-full md:w-5/6 text-xs/relaxed md:text-sm/relaxed text-black-medium/70">
         <p className="text-center">{props.rate}</p>
       </div>
     </article>

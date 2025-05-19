@@ -5,12 +5,12 @@ import keyImage from "../../assets/images/key_image.png";
 
 export default function ContactUs(): ReactElement {
   return (
-    <section className="row-span-5 col-span-7 bg-linear-to-t from-60% from-black-medium to-60% to-white-background flex flex-col gap-y-4 justify-center items-center font-poppins">
+    <section className="row-span-8 md:row-span-5 col-span-7 md:bg-linear-to-t md:from-60% md:from-black-medium md:to-60% md:to-white-background flex flex-col gap-y-4 justify-center items-center font-poppins">
       <TitleSection text="Contact Us" />
-      <div className="flex flex-row h-fit w-5/6 bg-white-background">
+      <div className="border-2 border-red-500 flex flex-row h-fit w-full md:w-5/6 bg-white-background">
         <form
           action=""
-          className="w-1/2 flex flex-col justify-center items-center gap-y-10"
+          className="border-2 w-full md:w-1/2 flex flex-col justify-center items-center gap-y-10"
         >
           <input type="text" placeholder="Your name*" className="input" />
           <input type="text" placeholder="Your email*" className="input" />
@@ -27,7 +27,7 @@ export default function ContactUs(): ReactElement {
             fontSize="1.2rem"
           />
         </form>
-        <div className="w-1/2 p-10">
+        <div className="max-md:hidden w-1/2 p-10">
           <img src={keyImage} className="w-full h-full" alt="" />
         </div>
       </div>
