@@ -52,7 +52,7 @@ export default function BookNow(): ReactElement {
               buttonName="Book Now"
               weight="bold"
               height="12"
-              width="1/2"
+              width="30"
             />
           </div>
         </form>
