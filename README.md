@@ -1,54 +1,61 @@
-# React + TypeScript + Vite
+# Car Rent
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web para aluguel de carros, desenvolvida com foco em performance, design moderno e experiência do usuário. Este projeto é uma interface responsiva (versão desktop concluída) que simula a visualização e filtragem de carros disponíveis para aluguel.
 
-Currently, two official plugins are available:
+**[Acesse a versão online](https://car-rent-eta-lemon.vercel.app/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Listagem de carros disponíveis para aluguel
+- Interface limpa e moderna com design focado na usabilidade
+- Filtro por modelo, marca e outros critérios (ex: segmento, tipo de motor, etc.)
+- Animações suaves e layout fluido
+- Estrutura modular com boas práticas de código
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tecnologias Utilizadas
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- [React](https://reactjs.org/) — biblioteca para construção da interface
+-  [TypeScript](https://www.typescriptlang.org/) — tipagem estática e segura
+- [Vite](https://vitejs.dev/) — bundler moderno e rápido
+- [Tailwind CSS](https://tailwindcss.com/) — framework CSS utilitário
+- [React Icons](https://react-icons.github.io/react-icons/) — ícones personalizados e leves
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Como Executar Localmente
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/Leonardobern10/car-rent.git
+   cd car-rent
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+2. Instale as dependências:
+
+npm install
+
+
+3. Rode o projeto:
+
+npm run dev
+
+
+4. Acesse em http://localhost:5173
+
+
+Layout
+
+O design foi inspirado em aplicações modernas de aluguel de veículos, com foco em clareza, usabilidade e estética profissional. A interface foi construída com componentes reutilizáveis e estilização flexível com Tailwind.
+
+Contribuindo
+
+Pull requests são bem-vindos! Para contribuições maiores, por favor abra uma issue primeiro para discutirmos mudanças.
+
+Licença
+
+MIT
+
+
+---
+
+Desenvolvido com dedicação por Leonardo Bernardo.
+
+---
+
