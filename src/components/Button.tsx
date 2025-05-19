@@ -18,7 +18,7 @@ export default function Button(props: {
         props.fontSize ?? "sm"
       } font-${props.weight} text-${
         props.color
-      } font-poppins font-bold text-black-medium w-${props.width} h-${
+      } font-poppins font-bold text-black-medium min-w-30 w-${props.width} h-${
         props.height
       } hover:cursor-pointer hover:bg-black-medium hover:text-bege transition-colors`}
     >
