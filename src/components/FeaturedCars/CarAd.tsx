@@ -20,12 +20,12 @@ export default function CarAd(props: {
           })}
         </div>
       </div>
-      <div className="flex flex-row justify-between font-poppins">
-        <div>
-          <p className="text-black/50">Daily rate from</p>
+      <div className="flex flex-col md:flex-row justify-between font-poppins max-md:gap-y-5">
+        <div className="flex flex-row md:flex-col gap-x-10">
+          <p className="text-black/50 max-md:text-sm">Daily rate from</p>
           <p className="text-black font-medium">${props.dailyRate}</p>
         </div>
-        <Button buttonName="Book Now" />
+        <Button buttonName="Book Now" height="10" />
       </div>
     </div>
   );

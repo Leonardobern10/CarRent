@@ -14,10 +14,10 @@ export default function Carrousel<T>({
   renderItem,
 }: CarrouselProps<T>): ReactElement {
   return (
-    <Carousel opts={{ align: "start" }} className="w-full">
+    <Carousel opts={{ align: "start" }} className="w-4/6 md:w-full">
       <CarouselContent>
         {items.map((item, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 basis-1/1 h-fit">
+          <CarouselItem key={index} className="md:basis-1/2 basis-1/1 h-fit ">
             <div className="md:p-4">
               <Card>
                 <CardContent className="flex aspect-square items-center justify-between p-4 md:p-6">
