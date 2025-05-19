@@ -17,12 +17,10 @@ export default function App() {
       <BookNow />
       <FeaturedCars allCars={allDataCars} />
       <PremiumServices />
-      {/*
       <Rating />
       <Info />
       <ContactUs />
       <Footer />
-      */}
     </div>
   );
 }
