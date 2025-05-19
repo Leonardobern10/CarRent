@@ -7,7 +7,7 @@ export default function TitleSection(props: {
   return (
     <div>
       <h2
-        className={`text-2xl md:text-4xl font-montserrat pb-3 font-medium ${
+        className={`text-xl md:text-4xl font-montserrat pb-3 font-medium ${
           props.white ? "text-white-dark" : "text-black-medium"
         } md:text-black-medium decoration-orange-primary`}
       >
