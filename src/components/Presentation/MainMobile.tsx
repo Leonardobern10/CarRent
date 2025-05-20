@@ -1,7 +1,7 @@
 import type { DATA_PRESENTATION } from "@/model/DataPresentationType";
 import { motion } from "motion/react";
 import type { ReactElement } from "react";
-import Button from "../Button";
+import ButtonDefault from "../ButtonDefault";
 import ContainerIconsNetwork from "./ContainerIconsNetwork";
 import type { IconType } from "react-icons";
 import {
@@ -40,7 +40,7 @@ export default function MainMobile(props: {
         </h3>
       </div>
       <div className="flex flex-col justify-center items-center h-1/3 w-full gap-y-10 opacity-60">
-        <Button
+        <ButtonDefault
           width="1/2"
           fontSize="md"
           weight="normal"

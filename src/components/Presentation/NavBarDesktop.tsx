@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import Button from "../Button";
+import ButtonDefault from "../ButtonDefault";
 import NavBar from "./NavBar";
 
 export default function NavBarDesktop(): ReactElement {
@@ -8,7 +8,7 @@ export default function NavBarDesktop(): ReactElement {
     <div className="md:w-[60%] text-black flex flex-row justify-between md:px-10 font-montserrat">
       <NavBar desktopItems={items} />
       <div className="mr-15">
-        <Button
+        <ButtonDefault
           height="2.2rem"
           width="8rem"
           fontSize=".8rem"

@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import TitleSection from "../TitleSection";
-import Button from "../Button";
+import ButtonDefault from "../ButtonDefault";
 import keyImage from "../../assets/images/key_image.png";
 
 export default function ContactUs(): ReactElement {
@@ -20,7 +20,7 @@ export default function ContactUs(): ReactElement {
             placeholder="Your Message"
             className="input"
           />
-          <Button
+          <ButtonDefault
             buttonName="Send A Message"
             width="1/2"
             height="10"

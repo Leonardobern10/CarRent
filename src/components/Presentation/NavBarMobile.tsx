@@ -7,7 +7,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "../../components/ui/sheet";
-import Button from "../Button";
+import ButtonDefault from "../ButtonDefault";
 import { IoMenu } from "react-icons/io5";
 
 export default function NavBarMobile(): ReactElement {
@@ -23,7 +23,7 @@ export default function NavBarMobile(): ReactElement {
         </SheetHeader>
         <div className="flex flex-col gap-y-15 items-center">
           <NavBar desktopItems={items} />
-          <Button
+          <ButtonDefault
             height="2.2rem"
             width="8rem"
             fontSize=".8rem"

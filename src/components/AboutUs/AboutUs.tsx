@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import Button from "../Button";
+import ButtonDefault from "../ButtonDefault";
 import { dataAbout } from "../../data/dataAboutUs";
 import AboutDescription from "./AboutDescription";
 import TitleSection from "../TitleSection";
@@ -19,7 +19,7 @@ export default function AboutUs(): ReactElement {
           </div>
           <div className="flex flex-col justify-between w-3/4 max-md:items-center h-fit gap-y-8">
             <AboutDescription value={dataAbout} />
-            <Button
+            <ButtonDefault
               buttonName="Read more"
               width="1/2"
               fontSize="sm"

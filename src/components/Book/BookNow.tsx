@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import TitleSection from "../TitleSection";
-import Button from "../Button";
+import ButtonDefault from "../ButtonDefault";
 import SelectComponent from "../Select";
 import SelectDate from "../SelectDate";
 import generateHours from "../../service/generateHours";
@@ -48,7 +48,7 @@ export default function BookNow(): ReactElement {
               selectLabel="Time"
               value={generateHours()}
             />
-            <Button
+            <ButtonDefault
               buttonName="Book Now"
               weight="bold"
               height="12"

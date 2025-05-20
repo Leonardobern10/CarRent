@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import VerticalLine from "./VerticalLine";
-import Button from "../Button";
+import ButtonDefault from "../ButtonDefault";
 import {
   FaFacebook,
   FaInstagram,
@@ -42,7 +42,7 @@ export default function Main(props: { data: DATA_PRESENTATION }): ReactElement {
             {props.data.MAIN_TEXT}
           </h1>
           <h3 className="w-6/7 text-white-dark/70">{props.data.SUBTITTLE}</h3>
-          <Button
+          <ButtonDefault
             buttonName="Explore Now"
             width="[40%]"
             height="3rem"

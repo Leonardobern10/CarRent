@@ -32,7 +32,7 @@ const allDataCars: Array<CarInfo> = [
     labels: [
       { icon: VscPersonAdd, content: "4" },
       { icon: BsFuelPump, content: "Gasoline" },
-      { icon: BsCarFront, content: "Mini coupe" },
+      { icon: BsCarFront, content: "Coupe" },
     ],
     image: car3,
   },
