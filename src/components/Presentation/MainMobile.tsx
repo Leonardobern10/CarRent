@@ -31,11 +31,11 @@ export default function MainMobile(props: {
       transition={{ ease: "easeOut", duration: 1 }}
       className="flex flex-col justify-between items-center h-screen font-montserrat"
     >
-      <div className="flex flex-col gap-y-5 h-1/2 mt-10 w-7/8">
-        <h1 className="text-2xl text-start text-white-dark/80 text-shadow-sm text-shadow-black/50">
+      <div className="flex flex-col gap-y-5h-1/2 mt-10 w-7/8 sm:items-center">
+        <h1 className="text-2xl sm:text-4xl md:text-2xl text-start sm:text-center md:text-start text-white-dark/80 text-shadow-sm text-shadow-black/50">
           {props.data.MAIN_TEXT}
         </h1>
-        <h3 className="text-lg text-white-dark/80 text-shadow-sm text-shadow-black/50">
+        <h3 className="text-lg sm:text-xl md:text-lg sm:w-1/2 text-white-dark/80 text-shadow-sm text-shadow-black/50 sm:text-shadow-black md:text-shadow-black/50">
           {props.data.SUBTITTLE}
         </h3>
       </div>
