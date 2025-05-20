@@ -4,7 +4,6 @@ import * as React from "react";
 import { format } from "date-fns";
 import { Calendar as CalendarIcon } from "lucide-react";
 
-import { Button } from "../components/ui/button";
 import { Calendar } from "../components/ui/calendar";
 import {
   Popover,
@@ -20,14 +19,9 @@ export default function SelectDate(props: {
 
   return (
     <Popover>
-      <PopoverTrigger asChild>
-        <Button
-          variant={"outline"}
-          className="p-4 h-13 w-8/9 md:w-[280px] justify-start font-montserrat text-center md:text-left text-neutral-900/50 font-normal"
-        >
-          <CalendarIcon className="mr-2 h-4 w-4" />
-          {date ? format(date, "PPP") : <span>{props.selectLabel}</span>}
-        </Button>
+      <PopoverTrigger className="flex flex-row items-center justify-start p-6 gap-x-4 bg-white-background/50 border-1 rounded-md h-11 w-8/9 md:w-[280px] font-montserrat text-center md:text-left text-sm text-neutral-900/50 font-normal">
+        <CalendarIcon className="mr-2 h-4 w-4" />
+        {date ? format(date, "PPP") : <span>{props.selectLabel}</span>}
       </PopoverTrigger>
       <PopoverContent className="w-auto p-0">
         <Calendar

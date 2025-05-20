@@ -8,7 +8,6 @@ import {
   SelectValue,
   SelectLabel,
 } from "../components/ui/select";
-import { Button } from "./ui/button";
 
 export default function SelectComponent(props: {
   placeholder: string;
@@ -17,10 +16,11 @@ export default function SelectComponent(props: {
 }): ReactElement {
   return (
     <Select>
-      <SelectTrigger className="hover:text-black text-lg w-8/9 md:w-fit justify-start text-left bg-white-background p-6 h-12 font-montserrat">
-        <Button variant={"ghost"}>
-          <SelectValue className="text-black" placeholder={props.placeholder} />
-        </Button>
+      <SelectTrigger className=" hover:text-black text-sm w-8/9 md:w-fit justify-start text-left bg-white-background p-6 h-12 font-montserrat font-normal text-neutral-900/50">
+        <SelectValue
+          className="text-black/50"
+          placeholder={props.placeholder}
+        />
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>
