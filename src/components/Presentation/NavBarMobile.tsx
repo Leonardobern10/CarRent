@@ -24,9 +24,10 @@ export default function NavBarMobile(): ReactElement {
         <div className="flex flex-col gap-y-15 items-center">
           <NavBar desktopItems={items} />
           <ButtonDefault
-            height="2.2rem"
-            width="8rem"
-            fontSize=".8rem"
+            height="10"
+            width="1/2"
+            fontSize="md"
+            weight="normal"
             buttonName="Login | Sign Up"
           />
         </div>
