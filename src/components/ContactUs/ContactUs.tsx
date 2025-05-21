@@ -10,7 +10,7 @@ export default function ContactUs(): ReactElement {
       <div className="flex flex-row h-fit w-full md:w-5/6 bg-white-background max-md:pb-12">
         <form
           action=""
-          className="w-full h-fit md:w-1/2 flex flex-col justify-center items-center gap-y-10"
+          className="w-full h-fit md:h-5/6 md:w-1/2 flex flex-col justify-center items-center gap-y-10"
         >
           <input type="text" placeholder="Seu nome*" className="input" />
           <input type="text" placeholder="Seu e-mail*" className="input" />
@@ -28,7 +28,7 @@ export default function ContactUs(): ReactElement {
             fontSize="sm"
           />
         </form>
-        <div className="max-md:hidden w-1/2 p-10">
+        <div className="max-md:hidden w-1/2 md:h-5/6 p-10">
           <img src={keyImage} className="w-full h-full" alt="" />
         </div>
       </div>
