@@ -10,9 +10,9 @@ export default function NavBarDesktop(props: {
       <NavBar desktopItems={props.items} />
       <div className="mr-15">
         <ButtonDefault
-          height="2.2rem"
-          width="8rem"
-          fontSize=".8rem"
+          height="10"
+          fontSize="sm"
+          weight="normal"
           buttonName="Entrar | Cadastro"
         />
       </div>
