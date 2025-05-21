@@ -28,7 +28,7 @@ export default function AboutUs(): ReactElement {
               className="rounded-lg"
             />
           </div>
-          <div className="flex flex-col justify-between w-1/2 max-md:items-center h-fit gap-y-8">
+          <div className="flex flex-col justify-between w-5/7 md:w-1/2 max-md:items-center h-fit gap-y-8">
             <AboutDescription value={dataAbout} />
             <ButtonDefault
               buttonName="Leia mais"
