@@ -21,14 +21,14 @@ export default function AboutUs(): ReactElement {
       <div className="flex flex-col items-center justify-center md:gap-y-10">
         <TitleSection white={windowWidth < 768} text="Sobre nós" />
         <div className="w-full flex flex-col-reverse md:flex-row items-center justify-center gap-x-16 gap-y-10 mt-8">
-          <div className="h-full w-fit max-md:hidden">
+          <div className="h-full w-1/2 max-md:hidden">
             <img
               src="src/assets/images/car_orange.png"
               alt=""
               className="rounded-lg"
             />
           </div>
-          <div className="flex flex-col justify-between w-3/4 max-md:items-center h-fit gap-y-8">
+          <div className="flex flex-col justify-between w-1/2 max-md:items-center h-fit gap-y-8">
             <AboutDescription value={dataAbout} />
             <ButtonDefault
               buttonName="Leia mais"
