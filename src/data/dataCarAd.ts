@@ -11,7 +11,7 @@ const allDataCars: Array<CarInfo> = [
     dailyRate: 200,
     labels: [
       { icon: VscPersonAdd, content: "5" },
-      { icon: BsFuelPump, content: "Gasoline" },
+      { icon: BsFuelPump, content: "Gasolina" },
       { icon: BsCarFront, content: "SUV" },
     ],
     image: car1,
@@ -21,7 +21,7 @@ const allDataCars: Array<CarInfo> = [
     dailyRate: 340,
     labels: [
       { icon: VscPersonAdd, content: "2" },
-      { icon: BsFuelPump, content: "Eletric" },
+      { icon: BsFuelPump, content: "Elétrico" },
       { icon: BsCarFront, content: "Sedan" },
     ],
     image: car2,
@@ -31,8 +31,8 @@ const allDataCars: Array<CarInfo> = [
     dailyRate: 167,
     labels: [
       { icon: VscPersonAdd, content: "4" },
-      { icon: BsFuelPump, content: "Gasoline" },
-      { icon: BsCarFront, content: "Coupe" },
+      { icon: BsFuelPump, content: "Gasolina" },
+      { icon: BsCarFront, content: "Coupé" },
     ],
     image: car3,
   },

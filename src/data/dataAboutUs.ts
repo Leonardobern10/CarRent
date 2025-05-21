@@ -1,5 +1,5 @@
 import type { DATA_ABOUTUS } from "@/model/DataAboutUsType";
 
 export const dataAbout: DATA_ABOUTUS = {
-  TEXT: "We are a specialized team committed to providing reliable car rental services. One of the advantages of renting a car from us is offering competitive and transparent prices. By providing services such as comprehensive insurance...",
+  TEXT: "Somos uma equipe especializada, comprometida em oferecer serviços de aluguel de carros confiáveis. Uma das vantagens de alugar um carro conosco é a oferta de preços competitivos e transparentes. Oferecemos serviços como seguro completo...",
 };

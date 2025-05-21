@@ -17,7 +17,7 @@ export default function BookNow(): ReactElement {
 
   return (
     <div className="col-span-7 row-span-4 md:row-span-4 h-full md:h-5/6 flex flex-col justify-evenly md:justify-center items-center md:gap-y-10">
-      <TitleSection text="Book Now" />
+      <TitleSection text="Reserve agora" />
       <div className="flex items-center justify-evenly md:justify-center w-screen h-5/8 md:bg-bege">
         <form
           action=""
@@ -25,31 +25,31 @@ export default function BookNow(): ReactElement {
         >
           <div className="w-full flex flex-col md:flex-row items-center justify-evenly max-md:gap-y-7">
             <SelectComponent
-              placeholder="Pickup Location"
+              placeholder="Selecione a localidade"
               selectLabel="Cidades"
               value={cities}
             />
-            <SelectDate selectLabel="Pickup Date" />
-            <SelectDate selectLabel="Return Date" />
+            <SelectDate selectLabel="Data de Retirada" />
+            <SelectDate selectLabel="Data de Entrega" />
           </div>
           <div className="w-full flex flex-col md:flex-row items-center justify-evenly max-md:gap-y-7">
             <SelectComponent
-              placeholder="Car Type"
+              placeholder="Tipo de carro"
               selectLabel="Types"
               value={carType}
             />
             <SelectComponent
-              placeholder="Pickup Time"
+              placeholder="Hora de Retirada"
               selectLabel="Time"
               value={generateHours()}
             />
             <SelectComponent
-              placeholder="Return Time"
+              placeholder="Hora de Entrega"
               selectLabel="Time"
               value={generateHours()}
             />
             <ButtonDefault
-              buttonName="Book Now"
+              buttonName="Reserve agora"
               weight="bold"
               height="12"
               width="30"

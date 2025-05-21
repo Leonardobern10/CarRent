@@ -44,7 +44,7 @@ export default function MainMobile(props: {
           width="1/2"
           fontSize="md"
           weight="normal"
-          buttonName="Explore Now"
+          buttonName="Saiba mais"
         />
         <ContainerIconsNetwork icons={icons} />
       </div>

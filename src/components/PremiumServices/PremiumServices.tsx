@@ -11,24 +11,24 @@ export default function PremiumServices(): ReactElement {
       <TitleSection white={true} text="Our Premmium Services" />
       <div className="w-4/6 h-5/6 flex flex-col justify-between md:justify-evenly items-center gap-y-10">
         <p className="md:w-3/5 text-white-background text-sm/8 md:text-lg/8 text-center font-extralight">
-          Carent is a reputable car rental company that offers a wide range of
-          useful services for every taste.
+          A Carent é uma empresa de aluguel de carros respeitável que oferece
+          uma ampla variedade de serviços úteis para todos os gostos.
         </p>
         <div className="h-full w-full flex flex-col md:flex-row items-center justify-between gap-x-10 gap-y-10">
           <Service
             icon={Ri24HoursLine}
-            service="24 Hours Support"
-            description="We support you all hours of the day."
+            service="Suporte 24 Horas"
+            description="Estamos disponíveis para você em todas as horas do dia."
           />
           <Service
             icon={LiaMedalSolid}
-            service="Qualified Assurance"
-            description="All cars have a valid insurance."
+            service="Garantia Qualificada"
+            description="Todos os carros possuem seguro válido."
           />
           <Service
             icon={MdOutlineGpsFixed}
-            service="GPS on Cars"
-            description="All cars are equipped with GPS navigation system."
+            service="GPS nos Carros"
+            description="Todos os carros estão equipados com sistema de navegação GPS."
           />
         </div>
       </div>

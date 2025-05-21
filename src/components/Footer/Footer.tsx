@@ -15,7 +15,7 @@ export default function Footer(): ReactElement {
     <div className="col-span-7 row-span-2 md:row-span-2 flex flex-col justify-between md:justify-evenly items-center bg-black-medium md:border-t-2 md:border-t-white max-md:gap-y-7">
       <div className="w-4/5 h-1/3 text-center px-3">
         <p className="text-white/70 leading-8">
-          Need help renting a car? Please call{" "}
+          Precisa de ajuda para alugar um carro? Por favor, ligue para{" "}
           <span className="text-orange-primary">+1-333-444-5555</span>
         </p>
       </div>

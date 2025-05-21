@@ -13,6 +13,8 @@ export default function Header() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const items = ["Inicio", "Sobre", "Reservas", "Carros", "Contatos"];
+
   return (
     <motion.div
       initial={{ y: -100 }}
@@ -21,7 +23,11 @@ export default function Header() {
       className="flex flex-row justify-between items-center w-[95%] h-[10%] mt-5 md:m-0 text-white py-8 px-4 md:px-0 md:py-5"
     >
       <Logo />
-      {Number(widthScreen) < 768 ? <NavBarMobile /> : <NavBarDesktop />}
+      {Number(widthScreen) < 768 ? (
+        <NavBarMobile items={items} />
+      ) : (
+        <NavBarDesktop items={items} />
+      )}
     </motion.div>
   );
 }

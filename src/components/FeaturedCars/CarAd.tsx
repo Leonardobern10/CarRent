@@ -25,7 +25,7 @@ export default function CarAd(props: {
           <p className="text-black/50 max-md:text-sm">Daily rate from</p>
           <p className="text-black font-medium">${props.dailyRate}</p>
         </div>
-        <ButtonDefault buttonName="Book Now" height="10" />
+        <ButtonDefault buttonName="Reserve agora" height="10" />
       </div>
     </div>
   );
