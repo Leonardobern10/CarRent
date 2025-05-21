@@ -53,9 +53,6 @@
 .icon-base {
   @apply w-5/6 h-5/6 text-black-medium hover:cursor-pointer hover:scale-110 hover:transition-transform;
 }
-.icon-container {
-  @apply bg-orange-primary flex items-center justify-center hover:cursor-pointer hover:scale-110 hover:transition-transform;
-}
 .input {
   @apply border-2 w-60 md:w-100 p-2 md:p-4;
 }
