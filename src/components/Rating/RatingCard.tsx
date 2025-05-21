@@ -6,7 +6,7 @@ export default function RatingCard(props: {
   rate: string;
 }): ReactElement {
   return (
-    <article className="h-fit md:h-6/7 w-full flex flex-col justify-evenly items-center max-md:gap-y-3">
+    <article className="h-fit md:h-6/7 w-full flex flex-col justify-evenly items-center max-md:gap-y-3 md:gap-y-5">
       <div className="md:h-35 h-20 md:w-35 w-20">
         <img
           className="rounded-full h-full w-full"

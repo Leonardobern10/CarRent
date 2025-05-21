@@ -7,7 +7,7 @@ import RatingCard from "./RatingCard";
 export default function Rating(): ReactElement {
   return (
     <section className="col-start-2 col-end-7 row-span-3 md:row-span-6 flex flex-col gap-y-5 justify-evenly max-md:pt-8 items-center font-poppins">
-      <TitleSection text="What our clients say?" />
+      <TitleSection text="O que nossos clientes dizem?" />
       <Carrousel
         items={dataRating}
         renderItem={(el) => (
