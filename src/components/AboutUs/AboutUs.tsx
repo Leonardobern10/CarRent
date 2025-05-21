@@ -3,6 +3,7 @@ import ButtonDefault from "../ButtonDefault";
 import { dataAbout } from "../../data/dataAboutUs";
 import AboutDescription from "./AboutDescription";
 import TitleSection from "../TitleSection";
+import carImage from "../../assets/images/car_orange.png";
 
 export default function AboutUs(): ReactElement {
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
@@ -22,11 +23,7 @@ export default function AboutUs(): ReactElement {
         <TitleSection white={windowWidth < 1024} text="Sobre nós" />
         <div className="w-full flex flex-col-reverse lg:flex-row items-center justify-center gap-x-16 gap-y-10 mt-8">
           <div className="h-full w-1/2 max-lg:hidden">
-            <img
-              src="src/assets/images/car_orange.png"
-              alt=""
-              className="rounded-lg"
-            />
+            <img src={carImage} alt="" className="rounded-lg" />
           </div>
           <div className="flex flex-col justify-between w-5/7 lg:w-1/2 max-lg:items-center h-fit gap-y-8">
             <AboutDescription value={dataAbout} />

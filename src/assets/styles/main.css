@@ -60,7 +60,7 @@
   @apply w-40 bg-white-background px-2 py-4 whitespace-nowrap;
 }
 .logo {
-  @apply w-[40%] text-orange-primary text-2xl font-kanit font-bold tracking-widest;
+  @apply w-[40%] hover:text-bege hover:scale-110 text-orange-primary text-2xl font-kanit font-bold tracking-widest;
 }
 
 /* ---break---*/
