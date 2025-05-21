@@ -5,7 +5,7 @@ import car1 from "../assets/images/jeep_xd.png";
 import car2 from "../assets/images/lamborguini.png";
 import car3 from "../assets/images/mini_cooper.png";
 
-const allDataCars: Array<CarInfo> = [
+export const allDataCars: Array<CarInfo> = [
   {
     name: "JeepXD",
     dailyRate: 200,
@@ -38,4 +38,11 @@ const allDataCars: Array<CarInfo> = [
   },
 ];
 
-export default allDataCars;
+export const cities: Array<string> = [
+  "Rio de Janeiro",
+  "Belo Horizonte",
+  "São Paulo",
+  "Florianopolis",
+];
+
+export const carTypes: Array<string> = ["Eletric", "Hybrid", "Gasoline"];

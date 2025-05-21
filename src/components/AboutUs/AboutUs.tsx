@@ -1,11 +1,14 @@
 import { useEffect, useState, type ReactElement } from "react";
 import ButtonDefault from "../ButtonDefault";
-import { dataAbout } from "../../data/dataAboutUs";
+
 import AboutDescription from "./AboutDescription";
 import TitleSection from "../TitleSection";
 import carImage from "../../assets/images/car_orange.png";
+import type { DATA_ABOUTUS } from "@/model/DataAboutUsType";
 
-export default function AboutUs(): ReactElement {
+export default function AboutUs(props: {
+  dataAbout: DATA_ABOUTUS;
+}): ReactElement {
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
 
   useEffect(() => {
@@ -26,7 +29,7 @@ export default function AboutUs(): ReactElement {
             <img src={carImage} alt="" className="rounded-lg" />
           </div>
           <div className="flex flex-col justify-between w-5/7 lg:w-1/2 max-lg:items-center h-fit gap-y-8">
-            <AboutDescription value={dataAbout} />
+            <AboutDescription value={props.dataAbout} />
             <ButtonDefault
               buttonName="Leia mais"
               width="1/2"

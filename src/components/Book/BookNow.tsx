@@ -5,16 +5,10 @@ import SelectComponent from "../Select";
 import SelectDate from "../SelectDate";
 import generateHours from "../../service/generateHours";
 
-export default function BookNow(): ReactElement {
-  const cities = [
-    "Rio de Janeiro",
-    "Belo Horizonte",
-    "São Paulo",
-    "Florianopolis",
-  ];
-
-  const carType = ["Eletric", "Hybrid", "Gasoline"];
-
+export default function BookNow(props: {
+  cities: Array<string>;
+  carTypes: Array<string>;
+}): ReactElement {
   return (
     <div className="col-span-7 row-span-4 lg:row-span-4 h-full lg:h-5/6 flex flex-col justify-evenly lg:justify-center items-center md:gap-y-10">
       <TitleSection text="Reserve agora" />
@@ -27,7 +21,7 @@ export default function BookNow(): ReactElement {
             <SelectComponent
               placeholder="Selecione a localidade"
               selectLabel="Cidades"
-              value={cities}
+              value={props.cities}
             />
             <SelectDate selectLabel="Data de Retirada" />
             <SelectDate selectLabel="Data de Entrega" />
@@ -36,7 +30,7 @@ export default function BookNow(): ReactElement {
             <SelectComponent
               placeholder="Tipo de carro"
               selectLabel="Types"
-              value={carType}
+              value={props.carTypes}
             />
             <SelectComponent
               placeholder="Hora de Retirada"

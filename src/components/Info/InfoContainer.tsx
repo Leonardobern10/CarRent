@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 
-export default function InfoData(props: {
+export default function InfoContainer(props: {
   quantity: number;
   description: string;
 }): ReactElement {

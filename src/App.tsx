@@ -7,20 +7,26 @@ import Info from "./components/Info/Info";
 import PremiumServices from "./components/PremiumServices/PremiumServices";
 import Presentation from "./components/Presentation/Presentation";
 import Rating from "./components/Rating/Rating";
-import allDataCars from "./data/dataCarAd";
+import { allDataCars, carTypes, cities } from "./data/dataCarAd";
+import { DATA } from "./data/dataPresentation";
+import { dataAbout } from "./data/dataAboutUs";
+import { allServices, textServices } from "./data/dataPremmiumServices";
+import dataRating from "./data/dataRating";
+import { dataInfo } from "./data/dataInfo";
+import { dataContact } from "./data/dataContact";
 
 export default function App() {
   return (
     <div className="grid grid-cols-7 grid-rows-[repeat(29,200px)] lg:grid-rows-[repeat(41,_100px)] justify-between bg-linear-to-b from-90% from-white to-90% to-black-medium  h-full w-full lg:gap-y-8 content-center scroll-smooth">
-      <Presentation />
-      <AboutUs />
-      <BookNow />
+      <Presentation data={DATA} />
+      <AboutUs dataAbout={dataAbout} />
+      <BookNow cities={cities} carTypes={carTypes} />
       <FeaturedCars allCars={allDataCars} />
-      <PremiumServices />
-      <Rating />
-      <Info />
+      <PremiumServices text={textServices} services={allServices} />
+      <Rating data={dataRating} />
+      <Info allInfo={dataInfo} />
       <ContactUs />
-      <Footer />
+      <Footer dataContact={dataContact} />
     </div>
   );
 }
