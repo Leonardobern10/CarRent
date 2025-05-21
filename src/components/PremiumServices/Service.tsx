@@ -8,12 +8,12 @@ export default function Service(props: {
 }): ReactElement {
   const Icon = props.icon;
   return (
-    <article className="font-poppins flex flex-col justify-center items-center gap-y-6 border-2 bg-white h-60 max-md:p-5 md:h-80 w-full shadow-2xl">
-      <div className="w-15 md:w-20 h-15 md:h-20">
+    <article className="font-poppins flex flex-col justify-center items-center gap-y-6 md:gap-y-2 border-2 bg-white h-60 max-lg:p-5 lg:h-80 w-full md:w-5/7 lg:w-full shadow-2xl">
+      <div className="w-15 lg:w-20 h-15 lg:h-20">
         <Icon className="w-full h-full text-orange-primary" />
       </div>
       <div>
-        <p className="font-semibold text-md md:text-xl text-black">
+        <p className="font-semibold text-md lg:text-xl text-black">
           {props.service}
         </p>
       </div>

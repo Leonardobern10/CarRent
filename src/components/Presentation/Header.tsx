@@ -20,7 +20,7 @@ export default function Header() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ ease: "easeOut", duration: 1.5 }}
-      className="flex flex-row justify-between items-center w-[95%] h-[10%] mt-5 md:m-0 text-white py-8 px-4 md:px-0 md:py-5"
+      className="flex flex-row justify-between items-center w-[95%] h-[10%] mt-5 md:m-0 text-white py-8 px-4 lg:px-0 lg:py-5"
     >
       <Logo />
       {Number(widthScreen) < 1024 ? (

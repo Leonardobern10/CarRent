@@ -20,8 +20,8 @@ export default function CarAd(props: {
           })}
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-between font-poppins max-md:gap-y-5">
-        <div className="flex flex-row md:flex-col gap-x-10">
+      <div className="flex flex-col lg:flex-row justify-between font-poppins max-lg:gap-y-5">
+        <div className="flex flex-row lg:flex-col gap-x-10">
           <p className="text-black/50 max-md:text-sm">Daily rate from</p>
           <p className="text-black font-medium">${props.dailyRate}</p>
         </div>

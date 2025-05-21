@@ -16,7 +16,7 @@ export default function SelectComponent(props: {
 }): ReactElement {
   return (
     <Select>
-      <SelectTrigger className=" hover:text-black text-sm w-8/9 md:w-fit justify-start text-left bg-white-background p-6 h-12 font-montserrat font-normal text-neutral-900/50">
+      <SelectTrigger className=" hover:text-black text-sm w-8/9 lg:w-fit justify-start text-left bg-white-background p-6 h-12 font-montserrat font-normal text-neutral-900/50">
         <SelectValue
           className="text-black/50"
           placeholder={props.placeholder}

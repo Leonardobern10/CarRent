@@ -16,11 +16,11 @@ export default function Carrousel<T>({
   return (
     <Carousel
       opts={{ align: "start" }}
-      className={`w-min-4/6 max-w-5/6 md:w-full`}
+      className={`w-min-4/6 max-w-5/6 lg:w-full md:p-8`}
     >
       <CarouselContent>
         {items.map((item, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 basis-1/1 h-fit ">
+          <CarouselItem key={index} className="lg:basis-1/2 basis-1/1 h-fit ">
             <div className="md:p-4">
               <Card>
                 <CardContent className="flex aspect-square items-center justify-between p-4 md:p-8">
