@@ -8,9 +8,9 @@ export default function Info(props: {
 }): ReactElement {
   return (
     <motion.div
-      initial={{ x: -200, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
-      transition={{ ease: "backOut", duration: 1.3 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ ease: "backOut", duration: 1.5 }}
       className="flex flex-col md:flex-row justify-evenly items-center w-full bg-black-medium md:bg-bege/90 col-span-7 row-span-2 lg:row-span-3 md:h-50"
     >
       {props.allInfo.map((el) => (

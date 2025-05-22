@@ -10,8 +10,8 @@ export default function Service(props: {
   const Icon = props.icon;
   return (
     <motion.article
-      initial={{ x: 100, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       transition={{ ease: "backOut", duration: 1.3 }}
       className="font-poppins flex flex-col justify-center items-center gap-y-6 md:gap-y-2 border-2 bg-white h-60 max-lg:p-5 lg:h-80 w-full md:w-5/7 lg:w-full shadow-2xl"
     >

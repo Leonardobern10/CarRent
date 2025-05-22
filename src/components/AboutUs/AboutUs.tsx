@@ -15,14 +15,19 @@ export default function AboutUs(props: {
 
   return (
     <motion.section
-      initial={{ x: -200, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
-      transition={{ ease: "backOut", duration: 1.3 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.3 }}
       className="flex flex-col justify-around lg:justify-center h-full w-full max-lg:bg-black-medium row-span-2 lg:row-span-5 col-span-7 lg:col-start-2 lg:col-end-7"
     >
       <div className="flex flex-col items-center justify-center lg:gap-y-10">
         <TitleSection white={screenWidth < 1024} text="Sobre nós" />
-        <div className="w-full flex flex-col-reverse lg:flex-row items-center justify-center gap-x-16 gap-y-10 mt-8">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ ease: "backInOut", duration: 1.3 }}
+          className="w-full flex flex-col-reverse lg:flex-row items-center justify-center gap-x-16 gap-y-10 mt-8"
+        >
           <div className="h-full w-1/2 max-lg:hidden">
             <img
               src={carImage}
@@ -39,7 +44,7 @@ export default function AboutUs(props: {
               weight="normal"
             />
           </div>
-        </div>
+        </motion.div>
       </div>
     </motion.section>
   );

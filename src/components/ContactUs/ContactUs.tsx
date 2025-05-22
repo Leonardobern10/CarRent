@@ -6,11 +6,11 @@ import { motion } from "motion/react";
 
 export default function ContactUs(): ReactElement {
   return (
-    <section className="b row-span-3 lg:row-span-5 col-span-7 lg:bg-linear-to-t lg:from-60% lg:from-black-medium lg:to-60% lg:to-white-background flex flex-col gap-y-4 lg:gap-y-20 justify-evenly items-center font-poppins">
+    <section className="row-span-3 lg:row-span-5 col-span-7 lg:bg-linear-to-t lg:from-60% lg:from-black-medium lg:to-60% lg:to-white-background flex flex-col gap-y-4 lg:gap-y-20 justify-evenly items-center font-poppins">
       <TitleSection text="Entre em contato" />
       <motion.div
-        initial={{ x: -200, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         transition={{ ease: "backOut", duration: 1.3 }}
         className="flex flex-row h-fit lg:h-5/7 w-full lg:w-5/6 bg-white-background max-lg:pb-12"
       >

@@ -26,16 +26,16 @@ export default function MainMobile(props: {
   ];
   return (
     <motion.main
-      initial={{ x: -400, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{ ease: "easeOut", duration: 1 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: "easeOut", duration: 1.5 }}
       className="flex flex-col justify-between items-center h-screen font-montserrat"
     >
       <div className="flex flex-col gap-y-5 mt-10 w-7/8 sm:items-center">
-        <h1 className="text-2xl sm:text-4xl md:w-5/6 lg:text-2xl text-start sm:text-center md:text-start text-white-dark/80 text-shadow-sm text-shadow-black/50">
+        <h1 className="text-2xl sm:text-4xl sm:w-5/6 md:w-5/6 lg:text-2xl text-start sm:text-center md:text-start text-white-dark/80 text-shadow-sm text-shadow-black/50">
           {props.data.MAIN_TEXT}
         </h1>
-        <h3 className="text-lg lg:text-lg lg:text-start sm:w-1/2 md:w-5/6 text-white-dark/80 text-shadow-sm text-shadow-black/50 sm:text-shadow-black md:text-shadow-black/50">
+        <h3 className="text-sm lg:text-lg lg:text-start sm:w-1/3 md:w-5/6 text-white-dark/80 text-shadow-sm text-shadow-black/50 sm:text-shadow-black md:text-shadow-black/50">
           {props.data.SUBTITTLE}
         </h3>
       </div>
