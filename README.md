@@ -27,29 +27,30 @@ Aplicação web para aluguel de carros, desenvolvida com foco em performance, de
    ```bash
    git clone https://github.com/Leonardobern10/car-rent.git
    cd car-rent
+   ```
 
 2. Instale as dependências:
-
+```
 npm install
-
+```
 
 3. Rode o projeto:
-
+```
 npm run dev
-
+```
 
 4. Acesse em http://localhost:5173
 
 
-Layout
+### Layout
 
 O design foi inspirado em aplicações modernas de aluguel de veículos, com foco em clareza, usabilidade e estética profissional. A interface foi construída com componentes reutilizáveis e estilização flexível com Tailwind.
 
-Contribuindo
+### Contribuindo
 
 Pull requests são bem-vindos! Para contribuições maiores, por favor abra uma issue primeiro para discutirmos mudanças.
 
-Licença
+### Licença
 
 MIT
 
@@ -57,6 +58,4 @@ MIT
 ---
 
 Desenvolvido com dedicação por Leonardo Bernardo.
-
----
 
