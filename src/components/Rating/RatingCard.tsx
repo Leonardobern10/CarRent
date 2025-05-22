@@ -1,17 +1,15 @@
+import type { RatingCardProps } from "@/model/props/RatingCardProps";
 import type { ReactElement } from "react";
 
-export default function RatingCard(props: {
-  name: string;
-  image: string;
-  rate: string;
-}): ReactElement {
+export default function RatingCard(props: RatingCardProps): ReactElement {
   return (
     <article className="h-fit md:h-6/7 w-full flex flex-col justify-evenly items-center max-md:gap-y-3 md:gap-y-5">
       <div className="md:h-35 h-20 md:w-35 w-20">
         <img
           className="rounded-full h-full w-full"
           src={props.image}
-          alt={`foto do client ${props.name}`}
+          loading="lazy"
+          alt={`Image de nosso cliente ${props.name}`}
         />
       </div>
       <div>

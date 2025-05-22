@@ -10,8 +10,13 @@ export default function Rating(props: { data: Array<RateType> }): ReactElement {
       <TitleSection text="Avaliações dos clientes" />
       <Carrousel
         items={props.data}
-        renderItem={(el) => (
-          <RatingCard name={el.name} image={el.image} rate={el.rate} />
+        renderItem={(el, index) => (
+          <RatingCard
+            key={index}
+            name={el.name}
+            image={el.image}
+            rate={el.rate}
+          />
         )}
       />
     </section>
