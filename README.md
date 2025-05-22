@@ -24,10 +24,10 @@ Aplicação web para aluguel de carros, desenvolvida com foco em performance, de
 ## Como Executar Localmente
 
 1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/Leonardobern10/car-rent.git
-   cd car-rent
-   ```
+```bash
+git clone https://github.com/Leonardobern10/car-rent.git
+cd car-rent
+```
 
 2. Instale as dependências:
 ```
