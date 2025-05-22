@@ -28,7 +28,7 @@ export default function NavBarMobile(props: {
           <ButtonDefault
             height="10"
             width="1/2"
-            fontSize="sm"
+            fontSize="xs"
             weight="normal"
             buttonName="Entrar | Cadastro"
           />
