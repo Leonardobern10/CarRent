@@ -1,19 +1,9 @@
+import type { ButtonDefaultProps } from "@/model/ButtonDefaultProps";
 import type { ReactElement } from "react";
 
-export default function ButtonDefault(props: {
-  buttonName: string;
-  width?: string;
-  height?: string;
-  fontSize?: string;
-  backgroundColor?: string;
-  color?: string;
-  weight?: string;
-}): ReactElement {
+export default function ButtonDefault(props: ButtonDefaultProps): ReactElement {
   return (
     <button
-      style={{
-        backgroundColor: `${props.backgroundColor}`,
-      }}
       className={`bg-orange-primary rounded-sm p-2 text-${
         props.fontSize ?? "sm"
       } font-${props.weight} text-${

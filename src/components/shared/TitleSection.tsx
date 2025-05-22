@@ -1,9 +1,7 @@
+import type { TitleSectionsProps } from "@/model/TitleSectionProps";
 import type { ReactElement } from "react";
 
-export default function TitleSection(props: {
-  text: string;
-  white?: boolean;
-}): ReactElement {
+export default function TitleSection(props: TitleSectionsProps): ReactElement {
   return (
     <div>
       <h2
