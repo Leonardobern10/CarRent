@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import InfoContainer from "./InfoContainer";
-import type { InfoType } from "@/model/InfoType";
+import type { InfoType } from "@/model/types/InfoType";
 import { motion } from "motion/react";
 
 export default function Info(props: {

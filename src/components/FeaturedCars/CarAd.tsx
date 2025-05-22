@@ -1,14 +1,9 @@
 import type { ReactElement } from "react";
 import ButtonDefault from "../shared/ButtonDefault";
-import type { CarLabelType } from "@/model/CarLabelType";
 import CarLabel from "./CarLabel";
+import type { CarAdProps } from "@/model/props/CarAdProps";
 
-export default function CarAd(props: {
-  icons: Array<CarLabelType>;
-  carName: string;
-  dailyRate: number;
-  image: string;
-}): ReactElement {
+export default function CarAd(props: CarAdProps): ReactElement {
   return (
     <div className="flex flex-col justify-evenly w-full h-120 gap-y-10 p-4 font-montserrat">
       <div className="w-full h-fit flex flex-col justify-between gap-y-3">

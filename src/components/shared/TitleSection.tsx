@@ -1,4 +1,4 @@
-import type { TitleSectionsProps } from "@/model/TitleSectionProps";
+import type { TitleSectionsProps } from "@/model/props/TitleSectionProps";
 import type { ReactElement } from "react";
 
 export default function TitleSection(props: TitleSectionsProps): ReactElement {

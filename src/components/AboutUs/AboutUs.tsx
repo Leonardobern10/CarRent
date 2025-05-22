@@ -4,7 +4,7 @@ import ButtonDefault from "../shared/ButtonDefault";
 import AboutDescription from "./AboutDescription";
 import TitleSection from "../shared/TitleSection";
 import carImage from "../../assets/images/car_orange.png";
-import type { DATA_ABOUTUS } from "@/model/DataAboutUsType";
+import type { DATA_ABOUTUS } from "@/model/types/DataAboutUsType";
 import { motion } from "motion/react";
 import useWindowWidth from "../../hooks/useWindowWidth";
 

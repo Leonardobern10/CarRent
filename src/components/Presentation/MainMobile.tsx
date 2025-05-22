@@ -1,4 +1,4 @@
-import type { DATA_PRESENTATION } from "@/model/DataPresentationType";
+import type { DATA_PRESENTATION } from "@/model/types/DataPresentationType";
 import { motion } from "motion/react";
 import type { ReactElement } from "react";
 import ButtonDefault from "../shared/ButtonDefault";

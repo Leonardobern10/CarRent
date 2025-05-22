@@ -3,7 +3,7 @@ import Header from "./Header";
 import Main from "./Main";
 
 import MainMobile from "./MainMobile";
-import type { DATA_PRESENTATION } from "@/model/DataPresentationType";
+import type { DATA_PRESENTATION } from "@/model/types/DataPresentationType";
 
 export default function Presentation(props: {
   data: DATA_PRESENTATION;

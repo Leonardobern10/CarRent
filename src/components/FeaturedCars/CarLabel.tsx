@@ -1,4 +1,4 @@
-import type { CarLabelType } from "@/model/CarLabelType";
+import type { CarLabelType } from "@/model/types/CarLabelType";
 import type { ReactElement } from "react";
 
 export default function CarLabel(props: { data: CarLabelType }): ReactElement {

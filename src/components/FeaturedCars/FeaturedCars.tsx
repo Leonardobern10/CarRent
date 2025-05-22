@@ -1,8 +1,8 @@
 import type { ReactElement } from "react";
 import TitleSection from "../shared/TitleSection";
 import CarAd from "./CarAd";
-import type { CarInfo } from "@/model/CarInfoType";
 import Carrousel from "../../components/shared/Carrousel";
+import type { CarInfo } from "@/model/types/CarInfoType";
 
 export default function FeaturedCars(props: {
   allCars: Array<CarInfo>;

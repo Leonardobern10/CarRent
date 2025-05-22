@@ -1,7 +1,7 @@
 import type { ReactElement } from "react";
 import Logo from "../shared/Logo";
 import IconNetwork from "../shared/IconNetwork";
-import type { ContactType } from "@/model/ContactType";
+import type { ContactType } from "@/model/types/ContactType";
 
 export default function Footer(props: {
   dataContact: ContactType;
@@ -18,8 +18,8 @@ export default function Footer(props: {
       </div>
       <div className="h-1/2 flex flex-col lg:w-3/4 lg:flex-row-reverse lg:justify-between items-center gap-y-5">
         <ul className="lg:w-1/2 flex flex-row justify-end gap-x-4  lg:gap-x-8">
-          {props.dataContact.icons.map((el) => (
-            <IconNetwork footer={true} icon={el} />
+          {props.dataContact.icons.map((el, index) => (
+            <IconNetwork key={index} footer={true} icon={el} />
           ))}
         </ul>
         <Logo left={true} />

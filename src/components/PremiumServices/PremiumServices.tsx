@@ -1,13 +1,12 @@
 import type { ReactElement } from "react";
 import TitleSection from "../shared/TitleSection";
 import Service from "./Service";
-import type { ServicesType } from "@/model/ServicesType";
 import { motion } from "motion/react";
+import type { PremmiumServicesProps } from "@/model/props/PremmiumServicesProps";
 
-export default function PremiumServices(props: {
-  text: string;
-  services: Array<ServicesType>;
-}): ReactElement {
+export default function PremiumServices(
+  props: PremmiumServicesProps
+): ReactElement {
   return (
     <motion.section
       initial={{ opacity: 0 }}

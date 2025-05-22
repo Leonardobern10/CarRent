@@ -1,4 +1,4 @@
-import type { ButtonDefaultProps } from "@/model/ButtonDefaultProps";
+import type { ButtonDefaultProps } from "@/model/props/ButtonDefaultProps";
 import type { ReactElement } from "react";
 
 export default function ButtonDefault(props: ButtonDefaultProps): ReactElement {

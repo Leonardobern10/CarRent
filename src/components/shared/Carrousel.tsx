@@ -7,7 +7,7 @@ import {
   CarouselPrevious,
 } from "../../components/ui/carousel";
 import { Card, CardContent } from "../ui/card";
-import type { CarrouselProps } from "@/model/CarrouselProps";
+import type { CarrouselProps } from "@/model/props/CarrouselProps";
 import { motion } from "motion/react";
 
 export default function Carrousel<T>({
