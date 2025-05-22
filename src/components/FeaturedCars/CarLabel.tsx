@@ -6,7 +6,7 @@ export default function CarLabel(props: { data: CarLabelType }): ReactElement {
   return (
     <div className="flex flex-row justify-between items-center gap-x-1 font-poppins">
       <Icon className="text-black/50 h-4 w-4" />
-      <p className="text-sm font-medium/5 text-black">{props.data.content}</p>
+      <p className="text-xs font-medium/5 text-black">{props.data.content}</p>
     </div>
   );
 }

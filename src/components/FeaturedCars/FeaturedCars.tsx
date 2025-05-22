@@ -8,7 +8,7 @@ export default function FeaturedCars(props: {
   allCars: Array<CarInfo>;
 }): ReactElement {
   return (
-    <div className="lg:col-start-2 lg:col-end-7 col-span-7 place-self-center row-span-4 lg:row-span-6 flex flex-col items-center w-[90%] lg:w-full h-full max-lg:justify-evenly gap-y-0 lg:gap-y-10">
+    <div className="col-span-7 place-self-center row-span-4 lg:row-span-6 flex flex-col items-center w-[90%] lg:w-full h-full max-lg:justify-evenly gap-y-0 lg:gap-y-10">
       <TitleSection text="Carros em destaque" />
       <Carrousel
         items={props.allCars}

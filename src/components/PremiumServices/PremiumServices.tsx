@@ -19,7 +19,7 @@ export default function PremiumServices(
         <p className="lg:w-3/4 text-white-background text-sm/8 lg:text-lg/8 text-center font-extralight">
           {props.text}
         </p>
-        <div className="h-full w-full flex flex-col lg:flex-row items-center justify-between gap-x-10 gap-y-10">
+        <div className="h-full w-full flex flex-col lg:flex-row items-center justify-between gap-x-8 gap-y-10">
           {props.services.map((el) => (
             <Service
               key={el.index}

@@ -9,7 +9,7 @@ export default function CarAd(props: CarAdProps): ReactElement {
       <div className="w-full h-fit flex flex-col justify-between gap-y-3">
         <img src={props.image} alt={`imagem do ${props.carName}`} />
         <p className="text-lg font-semibold">{props.carName}</p>
-        <div className="flex flex-row justify-start gap-x-5">
+        <div className="flex flex-row justify-start gap-x-3">
           {props.icons.map((item, index) => {
             return <CarLabel key={index} data={item} />;
           })}

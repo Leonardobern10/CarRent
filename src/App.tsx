@@ -18,7 +18,7 @@ import { dataNavBarItems } from "./data/dataNavBarItems";
 
 export default function App() {
   return (
-    <div className="grid grid-cols-7 grid-rows-[repeat(29,200px)] lg:grid-rows-[repeat(41,_100px)] justify-between bg-linear-to-b from-90% from-white to-90% to-black-medium  h-full w-dvw lg:gap-y-8 content-center scroll-smooth">
+    <div className="grid grid-cols-7 grid-rows-[repeat(30,200px)] lg:grid-rows-[repeat(41,_100px)] justify-between items-stretch bg-linear-to-b from-90% from-white to-90% to-black-medium  h-full w-dvw lg:gap-y-8 content-center scroll-smooth">
       <Presentation data={DATA} navBarItems={dataNavBarItems} />
       <AboutUs dataAbout={dataAbout} />
       <BookNow cities={cities} carTypes={carTypes} />

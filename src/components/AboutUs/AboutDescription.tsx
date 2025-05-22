@@ -5,7 +5,7 @@ export default function AboutDescription(props: {
   data: DATA_ABOUTUS;
 }): ReactElement {
   return (
-    <p className="lg:text-xl/9 text-gray-dark/90 font-normal font-poppins w-full text-center lg:text-left">
+    <p className="lg:text-lg/6 xl:text-xl/10 text-gray-dark/90 font-normal font-poppins w-full text-center lg:text-left">
       {props.data.TEXT}
     </p>
   );

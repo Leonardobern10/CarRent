@@ -17,11 +17,14 @@ export default function Carrousel<T>({
   return (
     <Carousel
       opts={{ align: "start" }}
-      className={`w-min-4/6 max-w-5/6 lg:w-full md:p-8`}
+      className={`w-min-4/6 max-w-5/6 h-fit lg:w-full md:p-8`}
     >
       <CarouselContent>
         {items.map((item, index) => (
-          <CarouselItem key={index} className="lg:basis-1/2 basis-1/1 h-fit ">
+          <CarouselItem
+            key={index}
+            className="lg:basis-1/2 basis-1/1 h-fit w-fit "
+          >
             <motion.div
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -29,7 +32,7 @@ export default function Carrousel<T>({
               className="md:p-4"
             >
               <Card>
-                <CardContent className="flex aspect-square items-center justify-between p-4 md:p-8">
+                <CardContent className="flex aspect-square items-center justify-between p-1 md:p-8">
                   {renderItem(item, index)}
                 </CardContent>
               </Card>

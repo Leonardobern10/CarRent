@@ -18,7 +18,7 @@ export default function AboutUs(props: {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.3 }}
-      className="flex flex-col justify-around lg:justify-center h-full w-full max-lg:bg-black-medium row-span-2 lg:row-span-5 col-span-7 lg:col-start-2 lg:col-end-7"
+      className="flex flex-col justify-around lg:justify-center h-full w-full max-lg:bg-black-medium row-span-3 lg:row-span-5 col-span-7 lg:col-start-2 lg:col-end-7"
     >
       <div className="flex flex-col items-center justify-center lg:gap-y-10">
         <TitleSection white={screenWidth < 1024} text="Sobre nós" />
@@ -35,7 +35,7 @@ export default function AboutUs(props: {
               className="rounded-lg"
             />
           </div>
-          <div className="flex flex-col justify-between w-5/7 lg:w-1/2 max-lg:items-center h-fit gap-y-8">
+          <div className="flex flex-col justify-between w-5/7 lg:w-1/2 max-lg:items-center h-fit gap-y-5">
             <AboutDescription data={props.dataAbout} />
             <ButtonDefault
               buttonName="Leia mais"
