@@ -7,9 +7,9 @@ export default function NavBarDesktop(props: {
   navBarItems: Array<NavBarItemsType>;
 }): ReactElement {
   return (
-    <div className="lg:w-[60%] text-black flex flex-row justify-between lg:px-10 font-montserrat">
+    <div className="lg:w-[60%] text-black flex flex-row justify-between lg:px-10 lg:gap-x-10 font-montserrat">
       <NavBar navBarItems={props.navBarItems} />
-      <div className="mr-15">
+      <div className="xl:mr-15">
         <ButtonDefault
           height="10"
           fontSize="sm"
