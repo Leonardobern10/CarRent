@@ -5,8 +5,8 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "../components/ui/carousel";
-import { Card, CardContent } from "./ui/card";
+} from "../../components/ui/carousel";
+import { Card, CardContent } from "../ui/card";
 import type { CarrouselProps } from "@/model/CarrouselProps";
 import { motion } from "motion/react";
 

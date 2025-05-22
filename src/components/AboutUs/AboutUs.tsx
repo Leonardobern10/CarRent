@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactElement } from "react";
+import { type ReactElement } from "react";
 import ButtonDefault from "../shared/ButtonDefault";
 
 import AboutDescription from "./AboutDescription";
@@ -6,17 +6,12 @@ import TitleSection from "../shared/TitleSection";
 import carImage from "../../assets/images/car_orange.png";
 import type { DATA_ABOUTUS } from "@/model/DataAboutUsType";
 import { motion } from "motion/react";
+import useWindowWidth from "../../hooks/useWindowWidth";
 
 export default function AboutUs(props: {
   dataAbout: DATA_ABOUTUS;
 }): ReactElement {
-  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const screenWidth: number = useWindowWidth();
 
   return (
     <motion.section
@@ -26,7 +21,7 @@ export default function AboutUs(props: {
       className="flex flex-col justify-around lg:justify-center h-full w-full max-lg:bg-black-medium row-span-2 lg:row-span-5 col-span-7 lg:col-start-2 lg:col-end-7"
     >
       <div className="flex flex-col items-center justify-center lg:gap-y-10">
-        <TitleSection white={windowWidth < 1024} text="Sobre nós" />
+        <TitleSection white={screenWidth < 1024} text="Sobre nós" />
         <div className="w-full flex flex-col-reverse lg:flex-row items-center justify-center gap-x-16 gap-y-10 mt-8">
           <div className="h-full w-1/2 max-lg:hidden">
             <img src={carImage} alt="" className="rounded-lg" />

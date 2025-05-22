@@ -7,7 +7,7 @@ import {
   SelectTrigger,
   SelectValue,
   SelectLabel,
-} from "../components/ui/select";
+} from "../../components/ui/select";
 
 export default function SelectComponent(props: {
   placeholder: string;
