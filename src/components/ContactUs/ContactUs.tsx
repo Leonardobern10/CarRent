@@ -18,8 +18,18 @@ export default function ContactUs(): ReactElement {
           action=""
           className="w-full h-fit lg:h-5/6 lg:w-1/2 flex flex-col justify-center items-center gap-y-10"
         >
-          <input type="text" placeholder="Seu nome*" className="input" />
-          <input type="text" placeholder="Seu e-mail*" className="input" />
+          <input
+            type="text"
+            placeholder="Seu nome*"
+            className="input"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Seu e-mail*"
+            className="input"
+            required
+          />
           <textarea
             name=""
             id=""
