@@ -15,10 +15,11 @@ Aplicação web para aluguel de carros, desenvolvida com foco em performance, de
 ## Tecnologias Utilizadas
 
 - [React](https://reactjs.org/) — biblioteca para construção da interface
--  [TypeScript](https://www.typescriptlang.org/) — tipagem estática e segura
+- [TypeScript](https://www.typescriptlang.org/) — tipagem estática e segura
 - [Vite](https://vitejs.dev/) — bundler moderno e rápido
 - [Tailwind CSS](https://tailwindcss.com/) — framework CSS utilitário
 - [React Icons](https://react-icons.github.io/react-icons/) — ícones personalizados e leves
+- [Motion.dev](https://motion.dev/) - animações para melhor interatividade e experiência
 
 ## Como Executar Localmente
 
