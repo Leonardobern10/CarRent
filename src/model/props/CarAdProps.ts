@@ -1,4 +1,4 @@
-import type { CarLabelType } from "./CarLabelType";
+import type { CarLabelType } from "../types/CarLabelType";
 
 export type CarAdProps = {
   icons: Array<CarLabelType>;
