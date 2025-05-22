@@ -23,7 +23,7 @@ export default function Carrousel<T>({
         {items.map((item, index) => (
           <CarouselItem key={index} className="lg:basis-1/2 basis-1/1 h-fit ">
             <motion.div
-              initial={{ x: -200, opacity: 0 }}
+              initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ ease: "backOut", duration: 1.3 }}
               className="md:p-4"
