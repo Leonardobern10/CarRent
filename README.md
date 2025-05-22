@@ -1,10 +1,10 @@
-# Car Rent
+# 🚗 Car Rent
 
 Aplicação web para aluguel de carros, desenvolvida com foco em performance, design moderno e experiência do usuário. Este projeto é uma interface responsiva (versão desktop concluída) que simula a visualização e filtragem de carros disponíveis para aluguel.
 
 **[Acesse a versão online](https://car-rent-eta-lemon.vercel.app/)**
 
-## Features
+## ✨ Features
 
 - Listagem de carros disponíveis para aluguel
 - Interface limpa e moderna com design focado na usabilidade
