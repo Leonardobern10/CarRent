@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import type { DATA_ABOUTUS } from "@/model/types/DataAboutUsType";
+import type { DATA_ABOUTUS } from "../../model/types/DataAboutUsType";
 
 export default function AboutDescription(props: {
   data: DATA_ABOUTUS;
