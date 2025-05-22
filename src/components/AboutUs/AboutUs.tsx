@@ -5,6 +5,7 @@ import AboutDescription from "./AboutDescription";
 import TitleSection from "../TitleSection";
 import carImage from "../../assets/images/car_orange.png";
 import type { DATA_ABOUTUS } from "@/model/DataAboutUsType";
+import { motion } from "motion/react";
 
 export default function AboutUs(props: {
   dataAbout: DATA_ABOUTUS;
@@ -21,7 +22,12 @@ export default function AboutUs(props: {
   }, [windowWidth]);
 
   return (
-    <section className="flex flex-col justify-around lg:justify-center h-full w-full max-lg:bg-black-medium row-span-2 lg:row-span-5 col-span-7 lg:col-start-2 lg:col-end-7">
+    <motion.section
+      initial={{ x: -200, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ ease: "backOut", duration: 1.3 }}
+      className="flex flex-col justify-around lg:justify-center h-full w-full max-lg:bg-black-medium row-span-2 lg:row-span-5 col-span-7 lg:col-start-2 lg:col-end-7"
+    >
       <div className="flex flex-col items-center justify-center lg:gap-y-10">
         <TitleSection white={windowWidth < 1024} text="Sobre nós" />
         <div className="w-full flex flex-col-reverse lg:flex-row items-center justify-center gap-x-16 gap-y-10 mt-8">
@@ -39,6 +45,6 @@ export default function AboutUs(props: {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

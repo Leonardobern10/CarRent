@@ -4,13 +4,19 @@ import ButtonDefault from "../ButtonDefault";
 import SelectComponent from "../Select";
 import SelectDate from "../SelectDate";
 import generateHours from "../../service/generateHours";
+import { motion } from "motion/react";
 
 export default function BookNow(props: {
   cities: Array<string>;
   carTypes: Array<string>;
 }): ReactElement {
   return (
-    <div className="col-span-7 row-span-4 lg:row-span-4 h-full lg:h-5/6 flex flex-col justify-evenly lg:justify-center items-center md:gap-y-10">
+    <motion.div
+      initial={{ scaleX: 0.7, scaleY: 1.2, opacity: 0 }}
+      whileInView={{ scaleX: 1, scaleY: 1, opacity: 1 }}
+      transition={{ ease: "backOut", duration: 1.3 }}
+      className="col-span-7 row-span-4 lg:row-span-4 h-full lg:h-5/6 flex flex-col justify-evenly lg:justify-center items-center md:gap-y-10"
+    >
       <TitleSection text="Reserve agora" />
       <div className="flex items-center justify-evenly md:justify-center w-screen h-5/8 lg:bg-bege">
         <form
@@ -51,6 +57,6 @@ export default function BookNow(props: {
           </div>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 }
