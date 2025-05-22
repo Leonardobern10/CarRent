@@ -1,4 +1,4 @@
-import type { ContactType } from "@/model/ContactType";
+import type { ContactType } from "@/model/types/ContactType";
 import {
   FaFacebook,
   FaInstagram,

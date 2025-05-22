@@ -1,4 +1,4 @@
-import type { ServicesType } from "@/model/ServicesType";
+import type { ServicesType } from "@/model/types/ServicesType";
 import { LiaMedalSolid } from "react-icons/lia";
 import { MdOutlineGpsFixed } from "react-icons/md";
 import { Ri24HoursLine } from "react-icons/ri";

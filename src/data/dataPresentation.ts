@@ -1,4 +1,4 @@
-import type { DATA_PRESENTATION } from "@/model/DataPresentationType";
+import type { DATA_PRESENTATION } from "@/model/types/DataPresentationType";
 
 export const DATA: DATA_PRESENTATION = {
   MAIN_TEXT: "Aproveite a vida com os nossos carros confortáveis.",

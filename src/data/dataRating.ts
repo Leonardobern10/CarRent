@@ -1,4 +1,4 @@
-import type { RateType } from "../model/RateType";
+import type { RateType } from "../model/types/RateType";
 import client1 from "../assets/images/client1.png";
 import client2 from "../assets/images/client2.png";
 import client3 from "../assets/images/client3.png";

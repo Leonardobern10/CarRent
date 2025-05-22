@@ -1,4 +1,4 @@
-import type { InfoType } from "@/model/InfoType";
+import type { InfoType } from "@/model/types/InfoType";
 
 export const dataInfo: Array<InfoType> = [
   { index: 1, quantity: 450, description: "Carros para Aluguel" },

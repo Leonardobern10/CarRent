@@ -1,4 +1,4 @@
-import type { CarInfo } from "@/model/CarInfoType";
+import type { CarInfo } from "@/model/types/CarInfoType";
 import { BsCarFront, BsFuelPump } from "react-icons/bs";
 import { VscPersonAdd } from "react-icons/vsc";
 import car1 from "../assets/images/jeep_xd.png";
