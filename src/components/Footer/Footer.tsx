@@ -7,7 +7,7 @@ export default function Footer(props: {
   dataContact: ContactType;
 }): ReactElement {
   return (
-    <div className="col-span-7 row-span-2 lg:row-span-2 flex flex-col justify-between lg:justify-evenly items-center bg-black-medium lg:border-t-2 lg:border-t-white max-lg:gap-y-7">
+    <div className="col-span-7 row-span-2 lg:row-span-2 flex flex-col justify-between lg:justify-evenly items-center bg-black-medium max-lg:gap-y-7">
       <div className="w-4/5 h-1/3 text-center px-3">
         <p className="text-white/70 leading-8">
           {props.dataContact.text + " "}
