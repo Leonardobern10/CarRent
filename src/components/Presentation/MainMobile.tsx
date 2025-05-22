@@ -1,7 +1,7 @@
 import type { DATA_PRESENTATION } from "@/model/DataPresentationType";
 import { motion } from "motion/react";
 import type { ReactElement } from "react";
-import ButtonDefault from "../ButtonDefault";
+import ButtonDefault from "../shared/ButtonDefault";
 import ContainerIconsNetwork from "./ContainerIconsNetwork";
 import type { IconType } from "react-icons";
 import {

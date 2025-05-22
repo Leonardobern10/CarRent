@@ -1,10 +1,10 @@
 import type { ReactElement } from "react";
-import TitleSection from "../TitleSection";
-import ButtonDefault from "../ButtonDefault";
-import SelectComponent from "../Select";
-import SelectDate from "../SelectDate";
+import TitleSection from "../shared/TitleSection";
+import ButtonDefault from "../shared/ButtonDefault";
 import generateHours from "../../service/generateHours";
 import { motion } from "motion/react";
+import SelectComponent from "../shared/Select";
+import SelectDate from "../shared/SelectDate";
 
 export default function BookNow(props: {
   cities: Array<string>;

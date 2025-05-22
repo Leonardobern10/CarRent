@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import ButtonDefault from "../ButtonDefault";
+import ButtonDefault from "../shared/ButtonDefault";
 import NavBar from "./NavBar";
 
 export default function NavBarDesktop(props: {

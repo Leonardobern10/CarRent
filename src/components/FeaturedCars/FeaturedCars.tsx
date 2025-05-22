@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import TitleSection from "../TitleSection";
+import TitleSection from "../shared/TitleSection";
 import CarAd from "./CarAd";
 import type { CarInfo } from "@/model/CarInfoType";
 import Carrousel from "../Carrousel";

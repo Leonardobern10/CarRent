@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import ItemHeader from "../ItemHeader";
+import ItemHeader from "../shared/ItemHeader";
 
 export default function NavBar(props: {
   desktopItems: Array<string>;

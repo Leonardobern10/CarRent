@@ -7,7 +7,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "../../components/ui/sheet";
-import ButtonDefault from "../ButtonDefault";
+import ButtonDefault from "../shared/ButtonDefault";
 import { IoMenu } from "react-icons/io5";
 
 export default function NavBarMobile(props: {

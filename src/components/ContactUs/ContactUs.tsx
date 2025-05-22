@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
-import TitleSection from "../TitleSection";
-import ButtonDefault from "../ButtonDefault";
+import TitleSection from "../shared/TitleSection";
+import ButtonDefault from "../shared/ButtonDefault";
 import keyImage from "../../assets/images/key_image.png";
 import { motion } from "motion/react";
 

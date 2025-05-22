@@ -1,8 +1,8 @@
 import { useEffect, useState, type ReactElement } from "react";
-import ButtonDefault from "../ButtonDefault";
+import ButtonDefault from "../shared/ButtonDefault";
 
 import AboutDescription from "./AboutDescription";
-import TitleSection from "../TitleSection";
+import TitleSection from "../shared/TitleSection";
 import carImage from "../../assets/images/car_orange.png";
 import type { DATA_ABOUTUS } from "@/model/DataAboutUsType";
 import { motion } from "motion/react";
@@ -13,13 +13,10 @@ export default function AboutUs(props: {
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
 
   useEffect(() => {
-    window.addEventListener("resize", () => {
-      setWindowWidth(window.innerWidth);
-    });
-    return window.removeEventListener("resize", () => {
-      setWindowWidth(window.innerWidth);
-    });
-  }, [windowWidth]);
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <motion.section

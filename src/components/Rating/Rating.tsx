@@ -1,8 +1,8 @@
 import type { ReactElement } from "react";
-import TitleSection from "../TitleSection";
-import Carrousel from "../Carrousel";
+import TitleSection from "../shared/TitleSection";
 import RatingCard from "./RatingCard";
 import type { RateType } from "@/model/RateType";
+import Carrousel from "../shared/Carrousel";
 
 export default function Rating(props: { data: Array<RateType> }): ReactElement {
   return (

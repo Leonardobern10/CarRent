@@ -1,4 +1,4 @@
-import Logo from "../Logo";
+import Logo from "../shared/Logo";
 import { motion } from "motion/react";
 import NavBarDesktop from "./NavBarDesktop";
 import { useEffect, useState } from "react";

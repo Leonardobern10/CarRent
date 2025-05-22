@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
-import Logo from "../Logo";
-import IconNetwork from "../IconNetwork";
+import Logo from "../shared/Logo";
+import IconNetwork from "../shared/IconNetwork";
 import type { ContactType } from "@/model/ContactType";
 
 export default function Footer(props: {

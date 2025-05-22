@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import VerticalLine from "./VerticalLine";
-import ButtonDefault from "../ButtonDefault";
+import ButtonDefault from "../shared/ButtonDefault";
 import {
   FaFacebook,
   FaInstagram,

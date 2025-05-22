@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import TitleSection from "../TitleSection";
+import TitleSection from "../shared/TitleSection";
 import Service from "./Service";
 import type { ServicesType } from "@/model/ServicesType";
 import { motion } from "motion/react";

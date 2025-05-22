@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import type { IconType } from "react-icons";
-import IconNetwork from "../IconNetwork";
+import IconNetwork from "../shared/IconNetwork";
 
 export default function ContainerIconsNetwork(props: {
   icons: Array<IconType>;
