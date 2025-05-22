@@ -3,8 +3,9 @@ import { motion } from "motion/react";
 import NavBarDesktop from "./NavBarDesktop";
 import { useEffect, useState } from "react";
 import NavBarMobile from "./NavBarMobile";
+import type { NavBarItemsType } from "@/model/types/NavBarItemsType";
 
-export default function Header() {
+export default function Header(props: { navBarItems: Array<NavBarItemsType> }) {
   const [widthScreen, setWidthScreen] = useState<number>(window.innerWidth);
 
   useEffect(() => {
@@ -12,8 +13,6 @@ export default function Header() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  const items = ["Inicio", "Sobre", "Reservas", "Carros", "Contatos"];
 
   return (
     <motion.div
@@ -24,9 +23,9 @@ export default function Header() {
     >
       <Logo />
       {Number(widthScreen) < 1024 ? (
-        <NavBarMobile items={items} />
+        <NavBarMobile navBarItems={props.navBarItems} />
       ) : (
-        <NavBarDesktop items={items} />
+        <NavBarDesktop navBarItems={props.navBarItems} />
       )}
     </motion.div>
   );

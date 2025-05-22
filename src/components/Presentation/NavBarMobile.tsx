@@ -9,9 +9,10 @@ import {
 } from "../../components/ui/sheet";
 import ButtonDefault from "../shared/ButtonDefault";
 import { IoMenu } from "react-icons/io5";
+import type { NavBarItemsType } from "@/model/types/NavBarItemsType";
 
 export default function NavBarMobile(props: {
-  items: Array<string>;
+  navBarItems: Array<NavBarItemsType>;
 }): ReactElement {
   return (
     <Sheet>
@@ -23,11 +24,11 @@ export default function NavBarMobile(props: {
           <SheetTitle>Menu</SheetTitle>
         </SheetHeader>
         <div className="flex flex-col gap-y-15 items-center">
-          <NavBar desktopItems={props.items} />
+          <NavBar navBarItems={props.navBarItems} />
           <ButtonDefault
             height="10"
             width="1/2"
-            fontSize="md"
+            fontSize="sm"
             weight="normal"
             buttonName="Entrar | Cadastro"
           />
