@@ -6,4 +6,5 @@ export type ButtonDefaultProps = {
   backgroundColor?: string;
   color?: string;
   weight?: string;
+  onClick?: boolean;
 };

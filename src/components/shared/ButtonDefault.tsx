@@ -4,6 +4,10 @@ import type { ReactElement } from "react";
 export default function ButtonDefault(props: ButtonDefaultProps): ReactElement {
   return (
     <button
+      onClick={(e) => {
+        e.preventDefault();
+        console.log("Clicou!");
+      }}
       className={`bg-orange-primary rounded-sm p-2 text-${
         props.fontSize ?? "sm"
       } font-${props.weight ?? "normal"} text-${
