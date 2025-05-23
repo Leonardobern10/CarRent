@@ -6,10 +6,12 @@ export default function ButtonDefault(props: ButtonDefaultProps): ReactElement {
     <button
       className={`bg-orange-primary rounded-sm p-2 text-${
         props.fontSize ?? "sm"
-      } font-${props.weight} text-${
-        props.color
-      } font-poppins font-bold text-black-medium min-w-30 w-${props.width} h-${
-        props.height
+      } font-${props.weight ?? "normal"} text-${
+        props.color ?? "black-medium"
+      } font-poppins font-bold text-black-medium min-w-30 w-${
+        props.width ?? "fit"
+      } h-${
+        props.height ?? "fit"
       } hover:cursor-pointer hover:bg-black-medium hover:text-bege transition-colors`}
     >
       {props.buttonName}
