@@ -1,7 +1,7 @@
 import "@testing-library/jest-dom";
 
 class IntersectionObserverMock {
-  constructor(callback: any, options?: any) {}
+  constructor() {}
 
   observe = () => {};
   unobserve = () => {};
