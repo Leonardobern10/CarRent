@@ -14,7 +14,7 @@ export default function IconNetwork(props: {
           : "h-8 w-8 lg:h-6 lg:w-6 rounded-[5px]"
       }`}
     >
-      <Icon className="icon-base" />
+      <Icon className="icon-base" role="img" />
     </li>
   );
 }

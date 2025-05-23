@@ -49,7 +49,7 @@ export default function BookNow(props: {
               value={generateHours()}
             />
             <ButtonDefault
-              buttonName="Reserve agora"
+              buttonName="Reserve Já"
               weight="bold"
               height="12"
               width="30"

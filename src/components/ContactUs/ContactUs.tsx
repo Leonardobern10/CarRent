@@ -4,10 +4,10 @@ import ButtonDefault from "../shared/ButtonDefault";
 import keyImage from "../../assets/images/key_image.png";
 import { motion } from "motion/react";
 
-export default function ContactUs(): ReactElement {
+export default function ContactUs(props: { title: string }): ReactElement {
   return (
     <section className="row-span-3 lg:row-span-5 col-span-7 lg:bg-linear-to-t lg:from-60% lg:from-black-medium lg:to-60% lg:to-white-background flex flex-col gap-y-4 lg:gap-y-20 justify-evenly items-center font-poppins">
-      <TitleSection text="Entre em contato" />
+      <TitleSection text={props.title} />
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -15,6 +15,7 @@ export default function ContactUs(): ReactElement {
         className="flex flex-row h-fit lg:h-5/7 w-full lg:w-5/6 bg-white-background max-lg:pb-12"
       >
         <form
+          data-testid="contact-form"
           action=""
           className="w-full h-fit lg:h-5/6 lg:w-1/2 flex flex-col justify-center items-center gap-y-10"
         >
@@ -45,7 +46,11 @@ export default function ContactUs(): ReactElement {
           />
         </form>
         <div className="max-lg:hidden w-1/2 lg:h-5/6">
-          <img src={keyImage} className="w-full h-full" alt="" />
+          <img
+            src={keyImage}
+            className="w-full h-full"
+            alt="Recebendo a chave do carro"
+          />
         </div>
       </motion.div>
     </section>
