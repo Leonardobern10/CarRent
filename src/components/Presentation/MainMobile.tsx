@@ -12,6 +12,7 @@ import {
   FaTelegramPlane,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { useNavigate } from "react-router";
 
 export default function MainMobile(props: {
   data: DATA_PRESENTATION;
@@ -24,6 +25,7 @@ export default function MainMobile(props: {
     FaLinkedinIn,
     FaTelegramPlane,
   ];
+  const navigate = useNavigate();
   return (
     <motion.main
       initial={{ opacity: 0 }}
@@ -43,6 +45,7 @@ export default function MainMobile(props: {
           fontSize="md"
           weight="normal"
           buttonName="Saiba mais"
+          clickEvent={() => navigate("/carros")}
         />
         <ContainerIconsNetwork icons={icons} />
       </div>

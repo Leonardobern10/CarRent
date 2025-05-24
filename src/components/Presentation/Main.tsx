@@ -13,6 +13,7 @@ import type { DATA_PRESENTATION } from "@/model/types/DataPresentationType";
 import { motion } from "motion/react";
 import ContainerIconsNetwork from "./ContainerIconsNetwork";
 import type { IconType } from "react-icons";
+import { useNavigate } from "react-router";
 
 export default function Main(props: {
   data: DATA_PRESENTATION;
@@ -26,6 +27,7 @@ export default function Main(props: {
     FaLinkedinIn,
     FaTelegramPlane,
   ];
+  const navigate = useNavigate();
 
   return (
     <motion.main
@@ -57,6 +59,7 @@ export default function Main(props: {
             width="1/2"
             height="12"
             fontSize="lg"
+            clickEvent={() => navigate("/carros")}
           />
         </div>
       </motion.div>
