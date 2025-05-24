@@ -29,7 +29,7 @@ export default function Main(props: { data: DATA_PRESENTATION }): ReactElement {
       initial={{ opacity: 0, scaleX: 0.8 }}
       animate={{ opacity: 1, scaleX: 1 }}
       transition={{ ease: "easeOut", duration: 1.3 }}
-      className="flex items-center h-[70%] w-full main-background text-white-dark font-poppins mt-7 "
+      className="flex items-center h-full w-full main-background text-white-dark font-poppins mt-7"
     >
       <motion.div
         initial={{ opacity: 0, scaleX: 0.8 }}
