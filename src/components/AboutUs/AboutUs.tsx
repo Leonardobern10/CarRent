@@ -7,12 +7,14 @@ import carImage from "../../assets/images/car_orange.png";
 import type { DATA_ABOUTUS } from "@/model/types/DataAboutUsType";
 import { motion } from "motion/react";
 import useWindowWidth from "../../hooks/useWindowWidth";
+import { useNavigate } from "react-router";
 
 export default function AboutUs(props: {
   dataAbout: DATA_ABOUTUS;
   title: string;
 }): ReactElement {
   const screenWidth: number = useWindowWidth();
+  const navigate = useNavigate();
 
   return (
     <motion.section
@@ -43,6 +45,7 @@ export default function AboutUs(props: {
               width="1/2"
               fontSize="sm"
               weight="normal"
+              clickEvent={() => navigate("sobre")}
             />
           </div>
         </motion.div>
