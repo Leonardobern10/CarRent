@@ -11,7 +11,7 @@ export default function Presentation(props: {
   const screenWidth: number = useWindowWidth();
 
   return (
-    <div className="flex flex-col bg col-span-7 row-span-3 md:row-span-3 lg:row-span-5 bg-black-medium">
+    <div className="flex flex-col col-span-7 row-span-3 md:row-span-3 lg:row-span-5 bg-black-medium">
       {screenWidth >= 1024 ? (
         <Main data={props.data} />
       ) : (

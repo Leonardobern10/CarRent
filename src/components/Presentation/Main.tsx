@@ -42,11 +42,13 @@ export default function Main(props: { data: DATA_PRESENTATION }): ReactElement {
           <ContainerIconsNetwork icons={icons} />
           <VerticalLine />
         </div>
-        <div className="flex flex-col justify-around w-[80%] h-full bg-neutral-700/20">
+        <div className="flex flex-col justify-around w-[80%] h-full bg-neutral-700/20 backdrop-brightness-70">
           <h1 className="text-left w-7/8 text-white-dark/90">
             {props.data.MAIN_TEXT}
           </h1>
-          <h3 className="w-7/8 text-white-dark/70">{props.data.SUBTITTLE}</h3>
+          <h3 className="w-7/8 text-white-dark text-shadow-2xs text-shadow-black">
+            {props.data.SUBTITTLE}
+          </h3>
           <ButtonDefault
             buttonName="Saiba mais"
             width="1/2"
