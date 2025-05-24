@@ -14,7 +14,10 @@ import { motion } from "motion/react";
 import ContainerIconsNetwork from "./ContainerIconsNetwork";
 import type { IconType } from "react-icons";
 
-export default function Main(props: { data: DATA_PRESENTATION }): ReactElement {
+export default function Main(props: {
+  data: DATA_PRESENTATION;
+  path?: string;
+}): ReactElement {
   const icons: Array<IconType> = [
     FaInstagram,
     FaFacebook,
