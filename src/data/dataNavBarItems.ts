@@ -8,9 +8,9 @@ import {
 import { MdOutlineContactPhone } from "react-icons/md";
 
 export const dataNavBarItems: Array<NavBarItemsType> = [
-  { icon: IoHomeOutline, description: "Inicio" },
-  { icon: IoInformationCircleOutline, description: "Sobre" },
-  { icon: IoCartOutline, description: "Reservas" },
-  { icon: IoCarSportOutline, description: "Carros" },
-  { icon: MdOutlineContactPhone, description: "Contatos" },
+  { icon: IoHomeOutline, description: "Inicio", path: "/" },
+  { icon: IoInformationCircleOutline, description: "Sobre", path: "/sobre" },
+  { icon: IoCartOutline, description: "Reservas", path: "/reservas" },
+  { icon: IoCarSportOutline, description: "Carros", path: "/carros" },
+  { icon: MdOutlineContactPhone, description: "Contatos", path: "/contatos" },
 ];
