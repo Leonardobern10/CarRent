@@ -29,20 +29,20 @@ export default function Main(props: { data: DATA_PRESENTATION }): ReactElement {
       initial={{ opacity: 0, scaleX: 0.8 }}
       animate={{ opacity: 1, scaleX: 1 }}
       transition={{ ease: "easeOut", duration: 1.3 }}
-      className="flex items-center h-full w-full main-background text-white-dark font-poppins mt-7"
+      className="flex items-center h-full w-full main-background text-white-dark font-poppins pl-8"
     >
       <motion.div
         initial={{ opacity: 0, scaleX: 0.8 }}
         animate={{ opacity: 1, scaleX: 1 }}
         transition={{ ease: "easeOut", duration: 1.3 }}
-        className="flex flex-row justify-evenly items-center w-[47%] z-1 h-[80%]"
+        className="flex flex-row justify-evenly items-center w-[47%] h-[80%] shadow-2xl shadow-black-medium bg-neutral-700/20 backdrop-brightness-70"
       >
         <div className="w-[10%] h-[90%] flex flex-col items-center gap-y-5">
           <VerticalLine />
           <ContainerIconsNetwork icons={icons} />
           <VerticalLine />
         </div>
-        <div className="flex flex-col justify-around w-[80%] h-full bg-neutral-700/20 backdrop-brightness-70">
+        <div className="flex flex-col justify-around w-[80%] h-full ">
           <h1 className="text-left w-7/8 text-white-dark/90">
             {props.data.MAIN_TEXT}
           </h1>
