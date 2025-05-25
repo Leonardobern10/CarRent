@@ -5,9 +5,9 @@ import Footer from "../Footer/Footer";
 import { dataContact } from "../../data/dataContact";
 import Home from "../../pages/Home";
 import Sobre from "../../pages/Sobre";
-import Reservas from "../../pages/Reservas";
 import Carros from "../../pages/Carros";
 import Contatos from "../../pages/Contatos";
+import Carrinho from "../../pages/Carrinho";
 
 export default function App() {
   return (
@@ -16,9 +16,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />
-        <Route path="/reservas" element={<Reservas />} />
-        <Route path="/sobre" element={<Carros />} />
-        <Route path="/sobre" element={<Contatos />} />
+        <Route path="/carrinho" element={<Carrinho />} />
+        <Route path="/carros" element={<Carros />} />
+        <Route path="/contatos" element={<Contatos />} />
       </Routes>
       <Footer dataContact={dataContact} />
     </div>
