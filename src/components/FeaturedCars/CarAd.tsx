@@ -17,7 +17,7 @@ export default function CarAd(props: CarAdProps): ReactElement {
       </div>
       <div className="flex flex-col lg:flex-row justify-between font-poppins max-lg:gap-y-5">
         <div className="flex flex-row lg:flex-col gap-x-10">
-          <p className="text-black/50 max-md:text-sm">Daily rate from</p>
+          <p className="text-black/50 max-md:text-sm">Valor diária</p>
           <p className="text-black font-medium">${props.dailyRate}</p>
         </div>
         <ButtonDefault buttonName="Reserve agora" height="10" />
