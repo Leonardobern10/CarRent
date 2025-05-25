@@ -20,7 +20,11 @@ export default function CarAd(props: CarAdProps): ReactElement {
           <p className="text-black/50 max-md:text-sm">Valor diária</p>
           <p className="text-black font-medium">${props.dailyRate}</p>
         </div>
-        <ButtonDefault buttonName="Reserve agora" height="10" />
+        <ButtonDefault
+          buttonName="Reserve agora"
+          height="10"
+          clickEvent={() => console.log("Clicou")}
+        />
       </div>
     </div>
   );

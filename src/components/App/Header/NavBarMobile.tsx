@@ -6,8 +6,8 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "../../components/ui/sheet";
-import ButtonDefault from "../shared/ButtonDefault";
+} from "../../ui/sheet";
+import ButtonDefault from "../../shared/ButtonDefault";
 import { IoMenu } from "react-icons/io5";
 import type { NavBarItemsType } from "@/model/types/NavBarItemsType";
 
@@ -31,6 +31,7 @@ export default function NavBarMobile(props: {
             fontSize="xs"
             weight="normal"
             buttonName="Entrar | Cadastro"
+            clickEvent={() => console.log("Clicou!")}
           />
         </div>
       </SheetContent>

@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router";
-import Header from "../../components/App/Header";
+import Header from "./Header/Header";
 import { dataNavBarItems } from "../../data/dataNavBarItems";
 import Footer from "./Footer";
 import { dataContact } from "../../data/dataContact";

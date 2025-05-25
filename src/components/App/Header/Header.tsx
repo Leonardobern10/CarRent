@@ -1,10 +1,10 @@
-import Logo from "../shared/Logo";
+import Logo from "../../shared/Logo";
 import { motion } from "motion/react";
 
 import { useEffect, useState } from "react";
 import type { NavBarItemsType } from "@/model/types/NavBarItemsType";
-import NavBarDesktop from "../Presentation/NavBarDesktop";
-import NavBarMobile from "../Presentation/NavBarMobile";
+import NavBarDesktop from "./NavBarDesktop";
+import NavBarMobile from "./NavBarMobile";
 
 export default function Header(props: { navBarItems: Array<NavBarItemsType> }) {
   const [widthScreen, setWidthScreen] = useState<number>(window.innerWidth);

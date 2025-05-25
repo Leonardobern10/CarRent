@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import ButtonDefault from "../shared/ButtonDefault";
+import ButtonDefault from "../../shared/ButtonDefault";
 import NavBar from "./NavBar";
 import type { NavBarItemsType } from "@/model/types/NavBarItemsType";
 
@@ -15,6 +15,7 @@ export default function NavBarDesktop(props: {
           fontSize="sm"
           weight="normal"
           buttonName="Entrar | Cadastro"
+          clickEvent={() => console.log("Clicou!")}
         />
       </div>
     </div>
