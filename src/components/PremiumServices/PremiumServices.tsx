@@ -12,7 +12,7 @@ export default function PremiumServices(
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ ease: "backOut", duration: 1.3 }}
-      className="font-poppins col-span-7 row-span-6 lg:row-span-5 flex flex-col justify-evenly pt-10 lg:pt-5 items-center lg:gap-y-5 lg:bg-linear-to-b lg:to-70% lg:to-black-white lg:from-70% lg:from-black-medium max-lg:bg-black-medium"
+      className="font-poppins col-span-7 row-span-6 lg:row-span-5 flex flex-col justify-evenly pt-10 lg:pt-15 items-center lg:gap-y-5 lg:bg-linear-to-b lg:to-70% lg:to-black-white lg:from-70% lg:from-black-medium max-lg:bg-black-medium"
     >
       <TitleSection white={true} text="Serviços premmium" />
       <div className="w-4/6 h-5/6 flex flex-col justify-between lg:justify-evenly items-center gap-y-10">
