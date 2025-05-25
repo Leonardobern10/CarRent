@@ -4,8 +4,6 @@
 
 [🔗 Acesse o projeto em produção](https://car-rent-eta-lemon.vercel.app)
 
----
-
 ## 🧪 Tech Stack
 
 | Frontend | Estilo | Testes | Outros |
@@ -14,13 +12,10 @@
 
 > O projeto segue os princípios de Clean Code, SOLID e responsividade mobile-first.
 
----
-
 ## 📸 Demonstração
 
 ![CarRent Demo](https://user-images.githubusercontent.com/yourusername/demo-carrent.gif)
 
----
 
 ## ✨ Funcionalidades
 
@@ -33,8 +28,6 @@
 - Testes end-to-end com Cypress
 - Deploy contínuo com Vercel
 
----
-
 ## 🧠 Aprendizados
 
 Durante o desenvolvimento do CarRent, aprofundei conhecimentos em:
@@ -44,8 +37,6 @@ Durante o desenvolvimento do CarRent, aprofundei conhecimentos em:
 - Utilização do TailwindCSS para construção rápida de UI
 - Escrita de testes e2e com Cypress
 - Versionamento e deploy automatizado
-
----
 
 ## 🚀 Instalação local
 
@@ -61,8 +52,6 @@ npm install
 npm run dev
 ````
 
----
-
 ## 🧪 Rodando os testes E2E
 
 ```bash
@@ -72,8 +61,6 @@ npx cypress open
 # Ou execute no terminal (headless)
 npx cypress run
 ```
-
----
 
 ## 📁 Estrutura do Projeto
 
@@ -91,35 +78,13 @@ src/
 ├── main.tsx
 ```
 
----
-
 ## 🧑‍💻 Autor
 
-Desenvolvido com 💙 por **\[Seu Nome]**
+Desenvolvido com 💙 por **\[Leonardo Bernardo]**
 
 * [LinkedIn](https://www.linkedin.com/in/leonardobernardo-dev)
 * [Portfólio](https://portfolio-leonardo25.vercel.app/)
 * [GitHub](https://github.com/Leonardobern10)
 
----
 
-## 📄 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-```
-
----
-
-### ✅ Próximos Passos (se quiser evoluir o projeto)
-
-- Integração com API real (ou backend com Node.js + MongoDB)
-- Implementação de autenticação com login
-- Painel de administração para gerenciar carros
-- Histórico de reservas por usuário
-- Testes unitários com Vitest
-
----
-
-Se quiser, posso personalizar esse `README.md` com o link do seu GitHub, seu nome, avatar e redes sociais. Deseja?
-```
