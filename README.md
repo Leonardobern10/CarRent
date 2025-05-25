@@ -1,61 +1,90 @@
-# 🚗 Car Rent
+# 🚗 CarRent - Plataforma de Aluguel de Carros
 
-Aplicação web para aluguel de carros, desenvolvida com foco em performance, design moderno e experiência do usuário. Este projeto é uma interface responsiva (versão desktop concluída) que simula a visualização e filtragem de carros disponíveis para aluguel.
+**CarRent** é uma aplicação web moderna e responsiva para aluguel de carros. Desenvolvida com foco em **experiência do usuário**, **componentização escalável** e **boas práticas de desenvolvimento**, simula o fluxo completo de uma locadora digital: da descoberta do veículo à reserva.
 
-**[Acesse a versão online](https://car-rent-eta-lemon.vercel.app/)**
+[🔗 Acesse o projeto em produção](https://car-rent-eta-lemon.vercel.app)
 
-## ✨ Features
+## 🧪 Tech Stack
 
-- Listagem de carros disponíveis para aluguel
-- Interface limpa e moderna com design focado na usabilidade
-- Filtro por modelo, marca e outros critérios (ex: segmento, tipo de motor, etc.)
-- Animações suaves e layout fluido
-- Estrutura modular com boas práticas de código
+| Frontend | Estilo | Testes | Outros |
+|----------|--------|--------|--------|
+| React.js + TypeScript | TailwindCSS + ShadCN UI | Cypress, Vitest | Vite, ESLint, Prettier |
 
-## Tecnologias Utilizadas
+> O projeto segue os princípios de Clean Code, SOLID e responsividade mobile-first.
 
-- [React](https://reactjs.org/) — biblioteca para construção da interface
-- [TypeScript](https://www.typescriptlang.org/) — tipagem estática e segura
-- [Vite](https://vitejs.dev/) — bundler moderno e rápido
-- [Tailwind CSS](https://tailwindcss.com/) — framework CSS utilitário
-- [React Icons](https://react-icons.github.io/react-icons/) — ícones personalizados e leves
-- [Motion.dev](https://motion.dev/) - animações para melhor interatividade e experiência
+## 📸 Demonstração
 
-## Como Executar Localmente
+![CarRent Demo](https://user-images.githubusercontent.com/yourusername/demo-carrent.gif)
 
-1. **Clone o repositório:**
+
+## ✨ Funcionalidades
+
+- Listagem de carros disponíveis
+- Filtro por marca/modelo/cidade
+- Página de detalhes do carro
+- Processo de reserva com seleção de cidade e datas
+- Design responsivo (mobile, tablet e desktop)
+- Animações suaves e feedback visual
+- Testes end-to-end com Cypress
+- Deploy contínuo com Vercel
+
+## 🧠 Aprendizados
+
+Durante o desenvolvimento do CarRent, aprofundei conhecimentos em:
+
+- Arquitetura de componentes reutilizáveis
+- Acessibilidade e boas práticas de UI/UX
+- Utilização do TailwindCSS para construção rápida de UI
+- Escrita de testes e2e com Cypress
+- Versionamento e deploy automatizado
+
+## 🚀 Instalação local
+
 ```bash
-git clone https://github.com/Leonardobern10/car-rent.git
-cd car-rent
-```
+# Clone o repositório
+git clone https://github.com/Leonardobern10/CarRent.git
+cd CarRent
 
-2. Instale as dependências:
-```
+# Instale as dependências
 npm install
-```
 
-3. Rode o projeto:
-```
+# Execute o projeto
 npm run dev
+````
+
+## 🧪 Rodando os testes E2E
+
+```bash
+# Abra o Cypress em modo interativo
+npx cypress open
+
+# Ou execute no terminal (headless)
+npx cypress run
 ```
 
-4. Acesse em http://localhost:5173
+## 📁 Estrutura do Projeto
+
+```
+src/
+├── components/
+│   ├── ui/                 # Base UI com ShadCN
+│   └── CarCard.tsx         # Exibição de carros
+├── pages/
+│   ├── Home.tsx
+│   ├── Booking.tsx         # Página de reservas
+│   └── Contact.tsx         # Página de contato
+├── assets/
+├── App.tsx
+├── main.tsx
+```
+
+## 🧑‍💻 Autor
+
+Desenvolvido com 💙 por **\[Leonardo Bernardo]**
+
+* [LinkedIn](https://www.linkedin.com/in/leonardobernardo-dev)
+* [Portfólio](https://portfolio-leonardo25.vercel.app/)
+* [GitHub](https://github.com/Leonardobern10)
 
 
-### Layout
-
-O design foi inspirado em aplicações modernas de aluguel de veículos, com foco em clareza, usabilidade e estética profissional. A interface foi construída com componentes reutilizáveis e estilização flexível com Tailwind.
-
-### Contribuindo
-
-Pull requests são bem-vindos! Para contribuições maiores, por favor abra uma issue primeiro para discutirmos mudanças.
-
-### Licença
-
-MIT
-
-
----
-
-Desenvolvido com dedicação por Leonardo Bernardo.
 
