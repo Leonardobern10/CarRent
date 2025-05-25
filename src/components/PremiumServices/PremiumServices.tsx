@@ -16,7 +16,7 @@ export default function PremiumServices(
     >
       <TitleSection white={true} text="Serviços premmium" />
       <div className="w-4/6 h-5/6 flex flex-col justify-between lg:justify-evenly items-center gap-y-10">
-        <p className="lg:w-3/4 text-white-background text-sm/8 lg:text-lg/8 text-center font-extralight">
+        <p className="lg:w-3/4 text-white-background text-sm/8 lg:text-lg/10 text-center font-normal">
           {props.text}
         </p>
         <div className="h-full w-full flex flex-col lg:flex-row items-center justify-between gap-x-8 gap-y-10">
