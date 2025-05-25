@@ -12,7 +12,7 @@ export default function ContactUs(props: { title: string }): ReactElement {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ ease: "backOut", duration: 1.3 }}
-        className="flex flex-row h-fit lg:h-5/7 w-full lg:w-5/6 bg-white-background max-lg:pb-12"
+        className="flex flex-row justify-around h-fit lg:h-5/7 w-full lg:w-5/6 bg-white-background max-lg:pb-12"
       >
         <form
           data-testid="contact-form"
@@ -46,10 +46,10 @@ export default function ContactUs(props: { title: string }): ReactElement {
             onClick={true}
           />
         </form>
-        <div className="max-lg:hidden w-1/2 lg:h-5/6">
+        <div className="flex justify-center items-center max-lg:hidden w-1/2 lg:h-5/6">
           <img
             src={keyImage}
-            className="w-full h-full"
+            className="w-5/6 h-full"
             alt="Recebendo a chave do carro"
           />
         </div>
