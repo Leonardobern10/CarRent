@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router";
 import Header from "../../components/App/Header";
 import { dataNavBarItems } from "../../data/dataNavBarItems";
-import Footer from "../Footer/Footer";
+import Footer from "./Footer";
 import { dataContact } from "../../data/dataContact";
 import Home from "../../pages/Home";
 import Sobre from "../../pages/Sobre";
