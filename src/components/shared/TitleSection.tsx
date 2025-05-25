@@ -5,7 +5,7 @@ export default function TitleSection(props: TitleSectionsProps): ReactElement {
   return (
     <div id="title-section">
       <h2
-        className={`text-xl md:text-2xl lg:text-4xl font-montserrat pb-3 font-medium ${
+        className={`text-xl md:text-2xl lg:text-2xl font-montserrat pb-3 font-medium ${
           props.white ? "text-white-dark" : "text-black-medium"
         }  decoration-orange-primary`}
       >

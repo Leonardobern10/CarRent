@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="grid grid-cols-7 grid-rows-[repeat(30,200px)] lg:grid-rows-[repeat(41,_100px)] justify-between items-stretch bg-linear-to-b from-90% from-white to-90% to-black-medium  h-full w-dvw lg:gap-y-8 content-center scroll-smooth">
       <Presentation data={DATA} />
-      <AboutUs dataAbout={dataAbout} title="About Us" />
+      <AboutUs dataAbout={dataAbout} title="Sobre nós" />
       <BookNow cities={cities} carTypes={carTypes} />
       <FeaturedCars allCars={allDataCars} />
       <PremiumServices text={textServices} services={allServices} />
