@@ -43,7 +43,7 @@ export default function ContactUs(props: { title: string }): ReactElement {
             height="10"
             weight="normal"
             fontSize="sm"
-            onClick={true}
+            clickEvent={() => console.log("Clicou")}
           />
         </form>
         <div className="flex justify-center items-center max-lg:hidden w-1/2 lg:h-5/6">
