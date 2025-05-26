@@ -1,7 +1,7 @@
 import type { ReactElement } from "react";
 import leader from "../assets/images/leader_photo.png";
-import Rating from "../components/Rating/Rating";
-import dataRating from "../data/dataRating";
+//import Rating from "../components/Rating/Rating";
+//import dataRating from "../data/dataRating";
 
 export default function Sobre(): ReactElement {
   return (
