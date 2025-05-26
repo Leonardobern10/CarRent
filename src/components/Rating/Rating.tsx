@@ -12,6 +12,7 @@ export default function Rating(props: { data: Array<RateType> }): ReactElement {
         items={props.data}
         renderItem={(el, index) => (
           <RatingCard
+            padding="6"
             key={index}
             name={el.name}
             image={el.image}

@@ -10,7 +10,7 @@ export default function CarAd(props: CarAdProps): ReactElement {
         props.border
           ? "shadow-sm shadow-black-medium/20 rounded-lg"
           : "border-none"
-      } justify-evenly gap-y-10 p-4 font-montserrat`}
+      } justify-evenly w-full h-110 gap-y-10 p-4 font-montserrat`}
     >
       <div className="w-full h-fit flex flex-col justify-between gap-y-3">
         <img

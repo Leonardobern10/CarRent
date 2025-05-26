@@ -1,13 +1,13 @@
 import type { ReactElement } from "react";
 import leader from "../assets/images/leader_photo.png";
-//import Rating from "../components/Rating/Rating";
-//import dataRating from "../data/dataRating";
+import Rating from "../components/Rating/Rating";
+import dataRating from "../data/dataRating";
 
 export default function Sobre(): ReactElement {
   return (
     <div className="text-neutral-800 mt-16 w-full">
       {/* Hero Section */}
-      <section className="bg-orange-primary py-16 px-6 lg:px-32 text-center">
+      <section className="bg-orange-primary py-16 px-8 lg:px-32 text-center">
         <h1 className="text-4xl lg:text-5xl font-bold mb-4">
           Mobilidade sem limites
         </h1>
@@ -17,7 +17,7 @@ export default function Sobre(): ReactElement {
       </section>
 
       {/* Quem somos */}
-      <section className="py-16 px-6 lg:px-32 max-w-5xl mx-auto lg:gap-x-20 gap-y-10 flex flex-col lg:flex-row justify-between ">
+      <section className="py-16 px-10 lg:px-32 max-w-5xl mx-auto lg:gap-x-20 gap-y-10 flex flex-col lg:flex-row justify-between ">
         <div className="w-full lg:w-280 h-full lg:h-80">
           <img
             className="w-full h-full object-cover rounded-2xl shadow-2xl"
@@ -37,7 +37,7 @@ export default function Sobre(): ReactElement {
       </section>
 
       {/* Diferenciais */}
-      <section className="py-16  px-6 lg:px-32">
+      <section className="py-16  px-10 lg:px-32">
         <h2 className="text-3xl font-semibold text-center mb-10">
           Nossos diferenciais
         </h2>
@@ -62,12 +62,12 @@ export default function Sobre(): ReactElement {
       </section>
 
       {/* Depoimentos */}
-      {/*<section className="py-16 px-6 lg:px-32 max-w-7xl mx-auto">
+      <section className="py-16 px-6 lg:px-32 max-w-7xl mx-auto">
         <Rating data={dataRating} />
-      </section>*/}
+      </section>
 
       {/* CTA */}
-      <section className="py-16 bg-black-medium text-white text-center px-6">
+      <section className="py-16 bg-black-medium text-white text-center px-10">
         <h2 className="text-3xl font-bold mb-4">
           Pronto para sua próxima viagem?
         </h2>
