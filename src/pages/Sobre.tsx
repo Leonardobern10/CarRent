@@ -1,10 +1,11 @@
 import type { ReactElement } from "react";
+import leader from "../assets/images/leader_photo.png";
 
 export default function Sobre(): ReactElement {
   return (
-    <div className="bg-white text-neutral-800">
+    <div className="text-neutral-800 mt-16 w-full">
       {/* Hero Section */}
-      <section className="bg-gray-100 py-16 px-6 lg:px-32 text-center">
+      <section className="bg-orange-primary py-16 px-6 lg:px-32 text-center">
         <h1 className="text-4xl lg:text-5xl font-bold mb-4">
           Mobilidade sem limites
         </h1>
@@ -14,18 +15,27 @@ export default function Sobre(): ReactElement {
       </section>
 
       {/* Quem somos */}
-      <section className="py-16 px-6 lg:px-32 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-4">Quem somos</h2>
-        <p className="text-neutral-700 leading-relaxed">
-          A <strong>CarRent</strong> nasceu com o objetivo de transformar a
-          forma como as pessoas alugam carros. Com uma frota moderna e um
-          processo totalmente digital, oferecemos liberdade, praticidade e
-          segurança para quem deseja ir mais longe.
-        </p>
+      <section className="py-16 px-6 lg:px-32 max-w-5xl mx-auto gap-x-20 flex flex-row justify-between ">
+        <div className="w-280 h-80">
+          <img
+            className="w-full h-full object-cover rounded-2xl shadow-2xl"
+            src={leader}
+            alt="Imagens de nosso funcionarios"
+          />
+        </div>
+        <div>
+          <h2 className="text-3xl font-semibold mb-4">Quem somos</h2>
+          <p className="text-neutral-700 leading-relaxed">
+            A <strong>CarRent</strong> nasceu com o objetivo de transformar a
+            forma como as pessoas alugam carros. Com uma frota moderna e um
+            processo totalmente digital, oferecemos liberdade, praticidade e
+            segurança para quem deseja ir mais longe.
+          </p>
+        </div>
       </section>
 
       {/* Diferenciais */}
-      <section className="py-16 bg-gray-50 px-6 lg:px-32">
+      <section className="py-16  px-6 lg:px-32">
         <h2 className="text-3xl font-semibold text-center mb-10">
           Nossos diferenciais
         </h2>
@@ -83,7 +93,7 @@ export default function Sobre(): ReactElement {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-primary text-white text-center px-6">
+      <section className="py-16 bg-black-medium text-white text-center px-6">
         <h2 className="text-3xl font-bold mb-4">
           Pronto para sua próxima viagem?
         </h2>

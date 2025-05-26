@@ -2,7 +2,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, it, vi, expect } from "vitest";
 import { IoHomeOutline } from "react-icons/io5";
-import ItemHeader from "../components/shared/ItemHeader";
+import ItemHeader from "../components/App/Header/ItemHeader";
 import useWindowWidth from "../hooks/useWindowWidth";
 
 // 🔁 Mock do hook useWindowWidth

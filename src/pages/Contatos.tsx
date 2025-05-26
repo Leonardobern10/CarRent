@@ -1,3 +1,4 @@
+import ButtonDefault from "../components/shared/ButtonDefault";
 import { useState } from "react";
 
 export default function Contatos() {
@@ -22,7 +23,7 @@ export default function Contatos() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto p-6">
+    <div className="max-w-3xl mx-auto p-6 mt-20">
       <h1 className="text-4xl font-bold mb-2 text-center text-primary">
         Fale Conosco
       </h1>
@@ -87,12 +88,10 @@ export default function Contatos() {
           ></textarea>
         </div>
 
-        <button
-          type="submit"
-          className="bg-primary text-white font-semibold px-6 py-3 rounded hover:bg-primary/90 transition-all"
-        >
-          Enviar Mensagem
-        </button>
+        <ButtonDefault
+          buttonName={"Enviar mensagem"}
+          clickEvent={() => console.log("Clicou")}
+        />
       </form>
     </div>
   );

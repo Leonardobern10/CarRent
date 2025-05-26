@@ -5,4 +5,5 @@ export type CarInfo = {
   dailyRate: number;
   labels: Array<CarLabelType>;
   image: string;
+  brand?: string;
 };

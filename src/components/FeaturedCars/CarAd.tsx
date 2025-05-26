@@ -5,7 +5,13 @@ import type { CarAdProps } from "@/model/props/CarAdProps";
 
 export default function CarAd(props: CarAdProps): ReactElement {
   return (
-    <div className="flex flex-col justify-evenly w-full h-120 gap-y-10 p-4 font-montserrat">
+    <div
+      className={`flex flex-col ${
+        props.border
+          ? "shadow-sm shadow-black-medium/20 rounded-lg"
+          : "border-none"
+      } justify-evenly w-full h-120 gap-y-10 p-4 font-montserrat`}
+    >
       <div className="w-full h-fit flex flex-col justify-between gap-y-3">
         <img src={props.image} alt={`imagem do ${props.carName}`} />
         <p className="text-lg font-semibold">{props.carName}</p>

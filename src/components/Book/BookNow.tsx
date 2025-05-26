@@ -53,6 +53,7 @@ export default function BookNow(props: {
               weight="bold"
               height="12"
               width="30"
+              clickEvent={() => console.log("CLicou!")}
             />
           </div>
         </form>

@@ -5,4 +5,5 @@ export type CarAdProps = {
   carName: string;
   dailyRate: number;
   image: string;
+  border?: boolean;
 };
