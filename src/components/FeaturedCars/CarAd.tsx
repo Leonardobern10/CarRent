@@ -6,14 +6,18 @@ import type { CarAdProps } from "@/model/props/CarAdProps";
 export default function CarAd(props: CarAdProps): ReactElement {
   return (
     <div
-      className={`flex flex-col ${
+      className={`flex flex-col bg-neutral-100/10 ${
         props.border
           ? "shadow-sm shadow-black-medium/20 rounded-lg"
           : "border-none"
-      } justify-evenly w-full h-120 gap-y-10 p-4 font-montserrat`}
+      } justify-evenly w-full h-110 gap-y-10 p-4 font-montserrat`}
     >
       <div className="w-full h-fit flex flex-col justify-between gap-y-3">
-        <img src={props.image} alt={`imagem do ${props.carName}`} />
+        <img
+          className="max-h-60 object-contain"
+          src={props.image}
+          alt={`imagem do ${props.carName}`}
+        />
         <p className="text-lg font-semibold">{props.carName}</p>
         <div className="flex flex-row justify-start gap-x-3">
           {props.icons.map((item, index) => {
