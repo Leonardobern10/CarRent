@@ -9,7 +9,7 @@ import car5 from "../assets/images/sentra_1.png";
 
 export const allDataCars: Array<CarInfo> = [
   {
-    name: "JeepXD",
+    name: "Jeep Renegade",
     dailyRate: 200,
     labels: [
       { icon: VscPersonAdd, content: "5" },
@@ -20,7 +20,7 @@ export const allDataCars: Array<CarInfo> = [
     brand: "JEEP",
   },
   {
-    name: "HB20 1.0 FLEX",
+    name: "Hb20 1.0",
     dailyRate: 245,
     labels: [
       { icon: VscPersonAdd, content: "5" },
@@ -31,7 +31,7 @@ export const allDataCars: Array<CarInfo> = [
     brand: "HYUNDAI",
   },
   {
-    name: "JEEP COMMANDER 1.3 FLEX",
+    name: "Jeep Commander 1.3",
     dailyRate: 245,
     labels: [
       { icon: VscPersonAdd, content: "5" },
