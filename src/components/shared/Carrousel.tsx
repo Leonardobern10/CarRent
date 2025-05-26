@@ -13,11 +13,12 @@ import { motion } from "motion/react";
 export default function Carrousel<T>({
   items,
   renderItem,
+  height,
 }: CarrouselProps<T>): ReactElement {
   return (
     <Carousel
       opts={{ align: "start" }}
-      className={`w-min-4/6 max-w-5/6 h-fit lg:w-full md:p-8`}
+      className={`h-${height ? height : "fit"} lg:w-full md:p-8`}
     >
       <CarouselContent>
         {items.map((item, index) => (
