@@ -2,6 +2,7 @@ import type { CarInfo } from "@/model/types/CarInfoType";
 import { BsCarFront, BsFuelPump } from "react-icons/bs";
 import { VscPersonAdd } from "react-icons/vsc";
 import car1 from "../assets/images/jeep_1.png";
+import car2 from "../assets/images/hb20.png";
 import car4 from "../assets/images/nivus_1.png";
 import car5 from "../assets/images/sentra_1.png";
 
@@ -16,6 +17,17 @@ export const allDataCars: Array<CarInfo> = [
     ],
     image: car1,
     brand: "JEEP",
+  },
+  {
+    name: "HB20 1.0 FLEX",
+    dailyRate: 245,
+    labels: [
+      { icon: VscPersonAdd, content: "5" },
+      { icon: BsFuelPump, content: "Gasolina | Álcool" },
+      { icon: BsCarFront, content: "Hatch" },
+    ],
+    image: car2,
+    brand: "HYUNDAI",
   },
   {
     name: "Fiat Nivus 1.0",
