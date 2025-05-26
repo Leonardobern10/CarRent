@@ -21,7 +21,7 @@ export default function Carrinho(): ReactElement {
   );
 
   return (
-    <div className="min-h-screen bg-gray-100 w-screen mt-20 p-10">
+    <div className="min-h-screen bg-gray-100 w-screen mt-15 p-10">
       <h1 className="text-3xl font-bold mb-6">Seu Carrinho</h1>
 
       {cartItems.length === 0 ? (
@@ -33,7 +33,7 @@ export default function Carrinho(): ReactElement {
             {cartItems.map((item) => (
               <div
                 key={item.id}
-                className="bg-white p-4 rounded-lg shadow flex items-center gap-4"
+                className="bg-white p-4 rounded-lg shadow flex flex-col lg:flex-row items-center gap-4"
               >
                 <img
                   src={item.image}
@@ -52,11 +52,11 @@ export default function Carrinho(): ReactElement {
                     <span className="font-medium">{item.returnDate}</span>
                   </p>
                 </div>
-                <div className="text-right">
+                <div className="text-right flex flex-row items-center gap-x-5">
                   <p className="text-base font-bold">
                     R$ {item.pricePerDay * item.days}
                   </p>
-                  <button className="text-red-600 text-sm mt-2 hover:underline">
+                  <button className="text-red-600 text-sm hover:underline">
                     Remover
                   </button>
                 </div>
