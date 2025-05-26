@@ -31,7 +31,7 @@ export default function MainMobile(props: {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeOut", duration: 1.5 }}
-      className={`flex flex-col justify-between items-center h-dvh mt-20 font-montserrat main-mobile`}
+      className={`flex flex-col justify-between items-center h-full mt-20 font-montserrat main-mobile`}
     >
       <div className="flex flex-col gap-y-5 mt-10 w-7/8 sm:items-center">
         <h1 className="text-2xl sm:w-5/6 md:w-5/6 text-start sm:text-center md:text-start text-white-dark/80 text-shadow-sm text-shadow-black">
