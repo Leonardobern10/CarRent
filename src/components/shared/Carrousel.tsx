@@ -14,11 +14,14 @@ export default function Carrousel<T>({
   items,
   renderItem,
   height,
+  tighter,
 }: CarrouselProps<T>): ReactElement {
   return (
     <Carousel
       opts={{ align: "start" }}
-      className={`w-full h-${height ? height : "fit"} lg:w-full md:p-8`}
+      className={`h-${height ? height : "fit"} w-${
+        tighter ? "5/6" : "full"
+      } lg:w-full md:p-8`}
     >
       <CarouselContent>
         {items.map((item, index) => (

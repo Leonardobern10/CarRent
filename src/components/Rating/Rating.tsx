@@ -10,6 +10,7 @@ export default function Rating(props: { data: Array<RateType> }): ReactElement {
       <TitleSection text="Avaliações dos clientes" />
       <Carrousel
         items={props.data}
+        tighter={true}
         renderItem={(el, index) => (
           <RatingCard
             padding="6"

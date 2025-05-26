@@ -16,7 +16,7 @@ export default function RatingCard(props: RatingCardProps): ReactElement {
         <p className="text-lg md:text-xl font-semibold">{props.name}</p>
       </div>
       <div className="w-full sm:w-7/8 text-xs/relaxed md:text-sm/relaxed text-black-medium/70">
-        <p className={`text-center p-${props.padding ? props.padding : "1"}`}>
+        <p className={`text-center px-${props.padding ? props.padding : "1"}`}>
           {props.rate}
         </p>
       </div>
