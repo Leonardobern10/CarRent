@@ -17,7 +17,7 @@ export default function Carrousel<T>({
   tighter,
 }: CarrouselProps<T>): ReactElement {
   const carouselHeight = height ?? "fit";
-  const carouselTighter = tighter ?? "full";
+  const carouselTighter = tighter ? "5/6" : "full";
   return (
     <Carousel
       opts={{ align: "start" }}
