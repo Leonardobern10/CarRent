@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import ItemHeader from "../../shared/ItemHeader";
+import ItemHeader from "./ItemHeader";
 import type { NavBarItemsType } from "@/model/types/NavBarItemsType";
 import { NavLink } from "react-router";
 
@@ -12,7 +12,9 @@ export default function NavBar(props: {
         <NavLink
           to={el.path}
           className={({ isActive }) =>
-            isActive ? "border-t-2 text-shadow-bege" : ""
+            isActive
+              ? "lg:border-t-2 lg:text-shadow-bege lg:bg-none bg-black-medium border-2 border-orange-primary rounded-3xl p-2"
+              : ""
           }
         >
           <ItemHeader key={index} value={el.description} icon={el.icon} />
