@@ -23,7 +23,7 @@ export default function Home() {
       <PremiumServices text={textServices} services={allServices} />
       <Rating data={dataRating} />
       <Info allInfo={dataInfo} />
-      <ContactUs title="Contact Us" />
+      <ContactUs title="Contate-nos" />
     </div>
   );
 }
