@@ -16,12 +16,12 @@ export default function Carrousel<T>({
   height,
   tighter,
 }: CarrouselProps<T>): ReactElement {
+  const carouselHeight = height ?? "fit";
+  const carouselTighter = tighter ?? "full";
   return (
     <Carousel
       opts={{ align: "start" }}
-      className={`h-${height ? height : "fit"} w-${
-        tighter ? "5/6" : "full"
-      } lg:w-full md:p-8`}
+      className={`h-${carouselHeight} w-${carouselTighter} lg:w-full md:p-8`}
     >
       <CarouselContent>
         {items.map((item, index) => (

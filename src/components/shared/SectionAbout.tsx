@@ -8,12 +8,12 @@ export default function SectionAbout({
   index,
   invert,
 }: SectionAboutProps): ReactElement {
+  const position = invert ? "flex-row-reverse" : "flex-row";
+
   return (
     <section
       key={index}
-      className={`py-16 px-10 lg:px-25 max-w-5xl mx-auto lg:gap-x-20 gap-y-10 flex flex-col lg:flex-row${
-        invert ? "-reverse" : ""
-      } justify-between`}
+      className={`py-16 px-10 lg:px-25 max-w-5xl mx-auto lg:gap-x-20 gap-y-10 flex flex-col ${position} justify-between`}
     >
       <div className="w-full lg:w-xl h-full lg:h-80">
         <img
