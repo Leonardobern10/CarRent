@@ -6,13 +6,13 @@ import { motion } from "motion/react";
 
 export default function ContactUs(props: { title: string }): ReactElement {
   return (
-    <section className="row-span-4 lg:row-span-5 col-span-7 lg:bg-linear-to-t lg:from-60% lg:from-black-medium lg:to-60% lg:to-white-dark flex flex-col gap-y-4 lg:gap-y-20 justify-evenly items-center font-poppins">
+    <section className="row-span-3 border-2 border-red-400 lg:row-span-4 col-span-7 bg-white-background lg:bg-linear-to-t lg:from-60% lg:from-black-medium lg:to-60% lg:to-white-dark flex flex-col py-15 lg:gap-y-20 justify-between items-center font-poppins">
       <TitleSection text={props.title} />
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ ease: "backOut", duration: 1.3 }}
-        className="flex flex-row justify-around h-fit lg:h-5/7 w-full lg:w-5/6 bg-white-dark max-lg:pb-12"
+        className="flex flex-row justify-around h-fit lg:h-5/7 w-full lg:w-5/6 lg:bg-white-dark max-lg:pb-12"
       >
         <form
           data-testid="contact-form"
