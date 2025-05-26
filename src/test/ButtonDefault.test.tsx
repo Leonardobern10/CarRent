@@ -5,12 +5,22 @@ import type { ButtonDefaultProps } from "@/model/props/ButtonDefaultProps";
 
 describe("Button", () => {
   it("renderiza com o texto correto", () => {
-    render(<ButtonDefault buttonName="Enviar" />);
+    render(
+      <ButtonDefault
+        buttonName="Enviar"
+        clickEvent={() => console.log("Clicou")}
+      />
+    );
     expect(screen.getByText("Enviar")).toBeInTheDocument();
   });
 
   it("aplica classes padrão quando não recebe props opcionais", () => {
-    render(<ButtonDefault buttonName="Botão" />);
+    render(
+      <ButtonDefault
+        buttonName="Botão"
+        clickEvent={() => console.log("Clicou")}
+      />
+    );
     const button = screen.getByText("Botão");
 
     expect(button).toHaveClass("text-sm"); // fontSize padrão
@@ -28,6 +38,7 @@ describe("Button", () => {
       color: "red-500",
       width: "40",
       height: "10",
+      clickEvent: () => console.log("CLicou"),
     };
 
     render(<ButtonDefault {...props} />);
