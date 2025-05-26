@@ -1,5 +1,7 @@
 import type { ReactElement } from "react";
 import leader from "../assets/images/leader_photo.png";
+import Rating from "../components/Rating/Rating";
+import dataRating from "../data/dataRating";
 
 export default function Sobre(): ReactElement {
   return (
@@ -60,36 +62,8 @@ export default function Sobre(): ReactElement {
       </section>
 
       {/* Depoimentos */}
-      <section className="py-16 px-6 lg:px-32 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-10 text-center">
-          O que dizem nossos clientes
-        </h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          {[
-            {
-              name: "Fernanda R.",
-              city: "RJ",
-              message:
-                "Alugar um carro nunca foi tão fácil. Tudo funcionou perfeitamente!",
-            },
-            {
-              name: "Carlos M.",
-              city: "SP",
-              message:
-                "Usei a CarRent em uma viagem de negócios e fiquei impressionado com a agilidade!",
-            },
-          ].map((testimonial, i) => (
-            <div
-              key={i}
-              className="bg-white p-6 border-l-4 border-primary rounded-md shadow-sm"
-            >
-              <p className="italic mb-2">“{testimonial.message}”</p>
-              <p className="font-semibold">
-                — {testimonial.name}, {testimonial.city}
-              </p>
-            </div>
-          ))}
-        </div>
+      <section className="py-16 px-6 lg:px-32 max-w-7xl mx-auto">
+        <Rating data={dataRating} />
       </section>
 
       {/* CTA */}
