@@ -17,8 +17,8 @@ export default function Sobre(): ReactElement {
       </section>
 
       {/* Quem somos */}
-      <section className="py-16 px-6 lg:px-32 max-w-5xl mx-auto gap-x-20 flex flex-row justify-between ">
-        <div className="w-280 h-80">
+      <section className="py-16 px-6 lg:px-32 max-w-5xl mx-auto lg:gap-x-20 gap-y-10 flex flex-col lg:flex-row justify-between ">
+        <div className="w-full lg:w-280 h-full lg:h-80">
           <img
             className="w-full h-full object-cover rounded-2xl shadow-2xl"
             src={leader}
@@ -62,9 +62,9 @@ export default function Sobre(): ReactElement {
       </section>
 
       {/* Depoimentos */}
-      <section className="py-16 px-6 lg:px-32 max-w-7xl mx-auto">
+      {/*<section className="py-16 px-6 lg:px-32 max-w-7xl mx-auto">
         <Rating data={dataRating} />
-      </section>
+      </section>*/}
 
       {/* CTA */}
       <section className="py-16 bg-black-medium text-white text-center px-6">

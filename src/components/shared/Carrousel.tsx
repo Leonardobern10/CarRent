@@ -18,7 +18,7 @@ export default function Carrousel<T>({
   return (
     <Carousel
       opts={{ align: "start" }}
-      className={`h-${height ? height : "fit"} lg:w-full md:p-8`}
+      className={`border-red-500 h-${height ? height : "fit"} lg:w-full md:p-8`}
     >
       <CarouselContent>
         {items.map((item, index) => (
