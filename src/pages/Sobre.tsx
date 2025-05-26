@@ -1,7 +1,8 @@
 import type { ReactElement } from "react";
-import leader from "../assets/images/leader_photo.png";
 import Rating from "../components/Rating/Rating";
 import dataRating from "../data/dataRating";
+import { sectionsAbout } from "../data/dataSectionsAbout";
+import SectionAbout from "../components/shared/SectionAbout";
 
 export default function Sobre(): ReactElement {
   return (
@@ -17,24 +18,15 @@ export default function Sobre(): ReactElement {
       </section>
 
       {/* Quem somos */}
-      <section className="py-16 px-10 lg:px-32 max-w-5xl mx-auto lg:gap-x-20 gap-y-10 flex flex-col lg:flex-row justify-between ">
-        <div className="w-full lg:w-280 h-full lg:h-80">
-          <img
-            className="w-full h-full object-cover rounded-2xl shadow-2xl"
-            src={leader}
-            alt="Imagens de nosso funcionarios"
-          />
-        </div>
-        <div>
-          <h2 className="text-3xl font-semibold mb-4">Quem somos</h2>
-          <p className="text-neutral-700 leading-relaxed">
-            A <strong>CarRent</strong> nasceu com o objetivo de transformar a
-            forma como as pessoas alugam carros. Com uma frota moderna e um
-            processo totalmente digital, oferecemos liberdade, praticidade e
-            segurança para quem deseja ir mais longe.
-          </p>
-        </div>
-      </section>
+      {sectionsAbout.map((el) => (
+        <SectionAbout
+          index={el.index}
+          img={el.img}
+          title={el.title}
+          text={el.text}
+          invert={el.invert}
+        />
+      ))}
 
       {/* Diferenciais */}
       <section className="py-16  px-10 lg:px-32">
