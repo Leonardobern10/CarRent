@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 
 export default function ContactUs(props: { title: string }): ReactElement {
   return (
-    <section className="lg:row-span-4 col-span-7 bg-white-background lg:bg-linear-to-t lg:from-60% lg:from-black-medium lg:to-60% lg:to-white-dark flex flex-col py-15 lg:gap-y-20 justify-between items-center font-poppins">
+    <section className="row-span-3 lg:row-span-4 col-span-7 bg-white-background lg:bg-linear-to-t lg:from-60% lg:from-black-medium lg:to-60% lg:to-white-dark flex flex-col py-15 lg:gap-y-20 justify-between items-center font-poppins">
       <TitleSection text={props.title} />
       <motion.div
         initial={{ opacity: 0 }}
