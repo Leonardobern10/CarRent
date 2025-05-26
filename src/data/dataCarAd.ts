@@ -24,7 +24,7 @@ export const allDataCars: Array<CarInfo> = [
     dailyRate: 245,
     labels: [
       { icon: VscPersonAdd, content: "5" },
-      { icon: BsFuelPump, content: "Gasolina | Álcool" },
+      { icon: BsFuelPump, content: "Flex" },
       { icon: BsCarFront, content: "Hatch" },
     ],
     image: car2,
@@ -35,7 +35,7 @@ export const allDataCars: Array<CarInfo> = [
     dailyRate: 245,
     labels: [
       { icon: VscPersonAdd, content: "5" },
-      { icon: BsFuelPump, content: "Gasolina | Álcool" },
+      { icon: BsFuelPump, content: "Flex" },
       { icon: BsCarFront, content: "SUV" },
     ],
     image: car3,
@@ -72,4 +72,4 @@ export const cities: Array<string> = [
   "Florianopolis",
 ];
 
-export const carTypes: Array<string> = ["Eletric", "Hybrid", "Gasoline"];
+export const carTypes: Array<string> = ["Eletrico", "Hibrido", "Gasolina"];
