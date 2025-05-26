@@ -8,11 +8,13 @@ import Sobre from "../../pages/Sobre";
 import Carros from "../../pages/Carros";
 import Contatos from "../../pages/Contatos";
 import Carrinho from "../../pages/Carrinho";
+import ScrollToTop from "../shared/ScrollToTop";
 
 export default function App() {
   return (
     <div className="flex flex-col justify-between items-center min-h-screen">
       <Header navBarItems={dataNavBarItems} />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />
