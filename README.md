@@ -6,16 +6,22 @@
 
 ## 🧪 Tech Stack
 
-| Frontend | Estilo | Testes | Outros |
-|----------|--------|--------|--------|
+| Frontend              | Estilo                  | Testes          | Outros                 |
+| --------------------- | ----------------------- | --------------- | ---------------------- |
 | React.js + TypeScript | TailwindCSS + ShadCN UI | Cypress, Vitest | Vite, ESLint, Prettier |
 
 > O projeto segue os princípios de Clean Code, SOLID e responsividade mobile-first.
 
 ## 📸 Demonstração
 
-![CarRent Demo](https://user-images.githubusercontent.com/yourusername/demo-carrent.gif)
-
+![](public/demo/Captura%20de%20tela%202025-05-24%20182409.png)
+![](public/demo/Captura%20de%20tela%202025-05-26%20204059.png)
+![](public/demo/Captura%20de%20tela%202025-05-26%20204107.png)
+![](public/demo/Captura%20de%20tela%202025-05-26%20204210.png)
+![](public/demo/Captura%20de%20tela%202025-05-26%20204231.png)
+![](public/demo/Captura%20de%20tela%202025-05-26%20210533.png)
+![](public/demo/Captura%20de%20tela%202025-05-26%20210542.png)
+![](public/demo/Captura%20de%20tela%202025-05-26%20210610.png)
 
 ## ✨ Funcionalidades
 
@@ -50,7 +56,7 @@ npm install
 
 # Execute o projeto
 npm run dev
-````
+```
 
 ## 🧪 Rodando os testes E2E
 
@@ -82,9 +88,6 @@ src/
 
 Desenvolvido com 💙 por **\[Leonardo Bernardo]**
 
-* [LinkedIn](https://www.linkedin.com/in/leonardobernardo-dev)
-* [Portfólio](https://portfolio-leonardo25.vercel.app/)
-* [GitHub](https://github.com/Leonardobern10)
-
-
-
+- [LinkedIn](https://www.linkedin.com/in/leonardobernardo-dev)
+- [Portfólio](https://portfolio-leonardo25.vercel.app/)
+- [GitHub](https://github.com/Leonardobern10)

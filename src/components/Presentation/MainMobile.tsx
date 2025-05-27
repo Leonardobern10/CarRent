@@ -31,13 +31,15 @@ export default function MainMobile(props: {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeOut", duration: 1.5 }}
-      className={`flex flex-col justify-between items-center h-full mt-20 font-montserrat main-mobile`}
+      className={`flex flex-col justify-between items-center h-full mt-20 w-7/8 font-poppins main-mobile rounded-2xl`}
     >
-      <div className="flex flex-col gap-y-5 mt-10 w-7/8 sm:items-center">
-        <h1 className="text-2xl sm:w-5/6 md:w-5/6 text-start sm:text-center md:text-start text-white-dark/80 text-shadow-sm text-shadow-black">
+      <div className="flex flex-col gap-y-5 mt-10 w-full px-10 sm:items-center">
+        <h1 className="text-2xl/10 tracking-wider sm:w-5/6 md:w-5/6 text-start sm:text-center md:text-start text-orange-primary/80 text-shadow-sm text-shadow-black/50">
           {props.data.MAIN_TEXT}
         </h1>
-        <h3 className="text-sm sm:w-1/3 text-black">{props.data.SUBTITTLE}</h3>
+        <h3 className="text-base sm:w-1/3 text-orange-primary/80 font-semibold text-shadow-xs text-shadow-black">
+          {props.data.SUBTITTLE}
+        </h3>
       </div>
       <div className="flex flex-col justify-center items-center h-1/3 w-full gap-y-10 opacity-80">
         <ButtonDefault

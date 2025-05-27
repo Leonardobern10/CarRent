@@ -33,7 +33,6 @@
   }
   .main-mobile {
     background-image: url("../images/main_car.png");
-    background-blend-mode: difference;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
