@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import {
   Sheet,
   SheetContent,
+  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -16,12 +17,17 @@ export default function NavBarMobile(props: {
 }): ReactElement {
   return (
     <Sheet>
-      <SheetTrigger>
-        <IoMenu className="w-12 h-12 text-orange-primary" />
+      <SheetTrigger asChild>
+        <button>
+          <IoMenu className="w-12 h-12 text-orange-primary" />
+        </button>
       </SheetTrigger>
       <SheetContent className="bg-white-dark text-black-medium">
         <SheetHeader>
           <SheetTitle>Menu</SheetTitle>
+          <SheetDescription>
+            Use o menu abaixo para navegar no site.
+          </SheetDescription>
         </SheetHeader>
         <div className="flex flex-col gap-y-15 items-center">
           <NavBar navBarItems={props.navBarItems} />
