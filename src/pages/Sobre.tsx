@@ -6,7 +6,7 @@ import SectionAbout from "../components/shared/SectionAbout";
 
 export default function Sobre(): ReactElement {
   return (
-    <div className="text-neutral-800 mt-16 w-full">
+    <div className="text-neutral-800 lg:mt-16 w-full">
       {/* Hero Section */}
       <section className="bg-orange-primary py-16 px-8 lg:px-32 text-center">
         <h1 className="text-4xl lg:text-5xl font-bold mb-4">

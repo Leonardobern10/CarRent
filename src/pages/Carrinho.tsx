@@ -21,7 +21,7 @@ export default function Carrinho(): ReactElement {
   );
 
   return (
-    <div className="min-h-screen bg-gray-100 w-screen mt-15 p-10">
+    <div className="min-h-screen bg-gray-100 w-screen lg:mt-15 p-10">
       <h1 className="text-3xl font-bold mb-6">Seu Carrinho</h1>
 
       {cartItems.length === 0 ? (

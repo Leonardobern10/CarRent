@@ -4,7 +4,7 @@ import type { ReactElement } from "react";
 
 export default function Carros(): ReactElement {
   return (
-    <div className="my-20 font-poppins">
+    <div className="lg:my-20 font-poppins">
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Filtro lateral */}
