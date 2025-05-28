@@ -8,13 +8,14 @@ export default function ButtonDefault(props: ButtonDefaultProps): ReactElement {
   const textColor = props.color ?? "black-medium"; // ex: white, black-medium
   const width = props.width ?? "fit"; // ex: fit, full, 32
   const height = props.height ?? "fit"; // ex: fit, 12, 16
+  const background = props.backgroundColor ?? "orange-primary";
   return (
     <button
       onClick={(e) => {
         e.preventDefault();
         event();
       }}
-      className={`bg-orange-primary rounded-sm p-2 text-${fontSize} font-${fontWeight} text-${textColor} font-poppins min-w-30 w-${width} h-${height} hover:cursor-pointer hover:bg-black-medium hover:text-bege`}
+      className={`bg-${background} rounded-sm p-2 text-${fontSize} font-${fontWeight} text-${textColor} font-poppins min-w-30 w-${width} h-${height} hover:cursor-pointer hover:bg-black-medium hover:text-bege`}
     >
       {props.buttonName}
     </button>

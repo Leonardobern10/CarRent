@@ -21,7 +21,7 @@ export default function AboutUs(props: {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.3 }}
-      className="flex flex-col justify-around lg:justify-center h-full w-full max-lg:bg-black-medium row-span-3 lg:row-span-5 col-span-7 lg:col-start-2 lg:col-end-7"
+      className="border-2 flex flex-col justify-around lg:justify-center h-full w-full max-lg:bg-black-medium row-span-3 lg:row-span-5 col-span-7 lg:col-start-2 lg:col-end-7"
     >
       <div className="flex flex-col items-center justify-center lg:gap-y-10">
         <TitleSection white={screenWidth < 1024} text={props.title} />

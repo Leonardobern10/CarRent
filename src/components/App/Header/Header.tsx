@@ -20,7 +20,7 @@ export default function Header(props: { navBarItems: Array<NavBarItemsType> }) {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ ease: "easeOut", duration: 1.5 }}
-      className="flex fixed flex-row justify-between items-center z-2 bg-black-medium/90 w-full h-1/10 md:m-0 py-4 px-4 lg:px-0 lg:py-5"
+      className="flex lg:fixed flex-row justify-between items-center z-2 bg-linear-to-b from-30 from-black-medium to-90 to-orange-primary lg:bg-black-medium/90 w-full h-1/10 md:m-0 py-4 px-4 lg:px-0 lg:py-5"
     >
       <Logo />
       {Number(widthScreen) < 1024 ? (

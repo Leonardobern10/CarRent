@@ -13,6 +13,8 @@ import {
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { useNavigate } from "react-router";
+import Select from "../shared/Select";
+import SelectDate from "../shared/SelectDate";
 
 export default function MainMobile(props: {
   data: DATA_PRESENTATION;
@@ -25,31 +27,54 @@ export default function MainMobile(props: {
     FaLinkedinIn,
     FaTelegramPlane,
   ];
-  const navigate = useNavigate();
   return (
     <motion.main
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeOut", duration: 1.5 }}
-      className={`flex flex-col justify-between items-center h-full mt-20 w-7/8 font-poppins main-mobile rounded-2xl`}
+      className={`relative top-0 flex flex-col justify-between bg-black-medium items-center h-fit w-full font-poppins`}
     >
-      <div className="flex flex-col gap-y-5 mt-10 w-full px-10 sm:items-center">
-        <h1 className="text-2xl/10 tracking-wider sm:w-5/6 md:w-5/6 text-start sm:text-center md:text-start text-orange-primary/80 text-shadow-sm text-shadow-black/50">
+      <div className="rounded-b-2xl bg-orange-primary h-fit w-full px-8">
+        <div className="w-[90%]">
+          <p className="text-lg text-white-background">
+            Pesquise pelo local de retirada de sua preferência.
+          </p>
+        </div>
+        <form
+          action="
+        "
+          className="flex flex-col gap-y-10 w-full h-full py-5 text-white-background font-poppins"
+        >
+          <fieldset className="flex flex-col gap-y-4">
+            <div>
+              <label htmlFor="">Local de Retirada</label>
+              <Select
+                placeholder="Digite para buscar..."
+                selectLabel="Teste"
+                value={["teste1", "teste2"]}
+              />
+            </div>
+            <div className="w-full">
+              <label htmlFor="">Data de Retirada</label>
+              <SelectDate selectLabel="Retirada" />
+            </div>
+            <div className="w-full">
+              <label htmlFor="">Data de Entrega</label>
+              <SelectDate selectLabel="Entrega" />
+            </div>
+          </fieldset>
+          <ButtonDefault
+            backgroundColor="black-medium"
+            buttonName="Buscar"
+            color="orange-primary"
+            clickEvent={() => console.log("Clicou!")}
+          />
+        </form>
+      </div>
+      <div className="flex flex-col gap-y-5 h-full w-full px-10 py-15 justify-start sm:items-center text-orange-primary">
+        <h1 className="text-lg/8 tracking-wider font-light sm:w-5/6 text-shadow-sm text-shadow-black-medium text-center sm:text-center md:text-start">
           {props.data.MAIN_TEXT}
         </h1>
-        <h3 className="text-base sm:w-1/3 text-orange-primary/80 font-semibold text-shadow-xs text-shadow-black">
-          {props.data.SUBTITTLE}
-        </h3>
-      </div>
-      <div className="flex flex-col justify-center items-center h-1/3 w-full gap-y-10 opacity-80">
-        <ButtonDefault
-          width="1/2"
-          fontSize="md"
-          weight="normal"
-          buttonName="Saiba mais"
-          clickEvent={() => navigate("/carros")}
-        />
-        <ContainerIconsNetwork icons={icons} />
       </div>
     </motion.main>
   );
