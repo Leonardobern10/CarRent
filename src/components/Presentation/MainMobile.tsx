@@ -2,31 +2,12 @@ import type { DATA_PRESENTATION } from "@/model/types/DataPresentationType";
 import { motion } from "motion/react";
 import type { ReactElement } from "react";
 import ButtonDefault from "../shared/ButtonDefault";
-import ContainerIconsNetwork from "./ContainerIconsNetwork";
-import type { IconType } from "react-icons";
-import {
-  FaInstagram,
-  FaFacebook,
-  FaWhatsapp,
-  FaLinkedinIn,
-  FaTelegramPlane,
-} from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { useNavigate } from "react-router";
 import Select from "../shared/Select";
 import SelectDate from "../shared/SelectDate";
 
 export default function MainMobile(props: {
   data: DATA_PRESENTATION;
 }): ReactElement {
-  const icons: Array<IconType> = [
-    FaInstagram,
-    FaFacebook,
-    FaXTwitter,
-    FaWhatsapp,
-    FaLinkedinIn,
-    FaTelegramPlane,
-  ];
   return (
     <motion.main
       initial={{ opacity: 0 }}

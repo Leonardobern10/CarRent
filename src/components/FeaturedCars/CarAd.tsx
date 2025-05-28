@@ -9,7 +9,7 @@ export default function CarAd(props: CarAdProps): ReactElement {
     : "border-none";
   return (
     <div
-      className={`flex flex-col bg-neutral-100/10 ${border} justify-evenly w-full h-110 gap-y-10 p-4 font-montserrat`}
+      className={`flex flex-col bg-neutral-100/10 ${border} justify-evenly w-full h-full lg:h-110 gap-y-10 p-4 font-montserrat`}
     >
       <div className="w-full h-fit flex flex-col justify-between gap-y-3">
         <img
