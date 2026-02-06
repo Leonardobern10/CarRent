@@ -9,8 +9,14 @@ import Carros from "../../pages/Carros";
 import Contatos from "../../pages/Contatos";
 import Carrinho from "../../pages/Carrinho";
 import ScrollToTop from "../shared/ScrollToTop";
+import { useEffect } from "react";
+import { reportWebVitals } from "../../reportWebVitals";
 
 export default function App() {
+  useEffect(() => {
+    reportWebVitals();
+  });
+
   return (
     <div className="flex flex-col justify-between items-center min-h-screen">
       <Header navBarItems={dataNavBarItems} />
