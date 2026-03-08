@@ -10,35 +10,47 @@ import {
 } from "../../ui/sheet";
 import ButtonDefault from "../../shared/ButtonDefault";
 import { IoMenu } from "react-icons/io5";
-import type { NavBarItemsType } from "@/model/types/NavBarItemsType";
+import type { NavBarType } from "@/model/types/NavBarType";
+import type { ButtonDefaultProps } from "@/model/props/ButtonDefaultProps";
 
-export default function NavBarMobile(props: {
-  navBarItems: Array<NavBarItemsType>;
-}): ReactElement {
+const styles = {
+  menu: "w-12 h-12 text-orange-primary",
+  sheetContent: "bg-white-dark text-black-medium",
+  container: "flex flex-col gap-y-15 items-center",
+};
+
+const texts = {
+  headerTitle: "Menu",
+  headerDescription: "Use o menu abaixo para navegar no site.",
+};
+
+const buttonProps: ButtonDefaultProps = {
+  height: "10",
+  width: "1/2",
+  fontSize: "xs",
+  weight: "normal",
+  buttonName: "Entrar",
+  clickEvent: () => console.log("Clicou!"),
+};
+
+export default function NavBarMobile({
+  navBarItems,
+}: NavBarType): ReactElement {
   return (
     <Sheet>
       <SheetTrigger asChild>
         <button>
-          <IoMenu className="w-12 h-12 text-orange-primary" />
+          <IoMenu className={styles.menu} />
         </button>
       </SheetTrigger>
-      <SheetContent className="bg-white-dark text-black-medium">
+      <SheetContent className={styles.sheetContent}>
         <SheetHeader>
-          <SheetTitle>Menu</SheetTitle>
-          <SheetDescription>
-            Use o menu abaixo para navegar no site.
-          </SheetDescription>
+          <SheetTitle>{texts.headerTitle}</SheetTitle>
+          <SheetDescription>{texts.headerDescription}</SheetDescription>
         </SheetHeader>
-        <div className="flex flex-col gap-y-15 items-center">
-          <NavBar navBarItems={props.navBarItems} />
-          <ButtonDefault
-            height="10"
-            width="1/2"
-            fontSize="xs"
-            weight="normal"
-            buttonName="Entrar | Cadastro"
-            clickEvent={() => console.log("Clicou!")}
-          />
+        <div className={styles.container}>
+          <NavBar navBarItems={navBarItems} />
+          <ButtonDefault {...buttonProps} />
         </div>
       </SheetContent>
     </Sheet>

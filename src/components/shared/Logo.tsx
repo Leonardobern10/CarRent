@@ -1,3 +1,5 @@
+import { slideTopToDown } from "../../animation/slideTopToDown";
+import { motion } from "motion/react";
 import type { ReactElement } from "react";
 import { Link } from "react-router";
 
@@ -8,10 +10,11 @@ export default function Logo(props: {
   const position = props.left ? "text-left" : "text-center";
   const black = props.black ? "text-black-medium" : "text-orange-primary";
   return (
-    <div
+    <motion.div
+      {...slideTopToDown(-100, 0)}
       className={` ${position}w-[40%] hover:text-bege hover:scale-x-120 hover:scale-y-80 transition-all ${black} text-2xl font-kanit font-bold tracking-widest`}
     >
       <Link to="/">CARENT</Link>
-    </div>
+    </motion.div>
   );
 }

@@ -2,12 +2,20 @@ import type { ReactElement } from "react";
 import type { IconType } from "react-icons";
 import IconNetwork from "../shared/IconNetwork";
 
-export default function ContainerIconsNetwork(props: {
+const styles = {
+  container: "flex flex-row lg:flex-col gap-y-4 gap-x-4",
+};
+
+type ContainerIconsNetworkProps = {
   icons: Array<IconType>;
-}): ReactElement {
+};
+
+export default function ContainerIconsNetwork({
+  icons,
+}: ContainerIconsNetworkProps): ReactElement {
   return (
-    <ul className="flex flex-row lg:flex-col gap-y-4 gap-x-4">
-      {props.icons.map((el, index) => (
+    <ul className={styles.container}>
+      {icons.map((el, index) => (
         <IconNetwork icon={el} key={index} />
       ))}
     </ul>

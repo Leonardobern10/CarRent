@@ -26,7 +26,7 @@ const buttonProps = (navigate: NavigateFunction) => ({
 
 const styles = {
   container:
-    "w-full flex flex-col-reverse lg:flex-row items-center justify-center gap-x-16 gap-y-10 mt-8 border-2 border-red-500",
+    "w-full flex flex-col-reverse lg:flex-row items-center justify-center gap-x-16 gap-y-10 mt-8",
   containerText:
     "flex flex-col justify-between w-5/7 lg:w-1/2 max-lg:items-center h-fit gap-y-5",
 };

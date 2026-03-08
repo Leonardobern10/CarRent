@@ -1,32 +1,30 @@
 import { Routes, Route } from "react-router";
 import Header from "./Header/Header";
 import { dataNavBarItems } from "../../data/dataNavBarItems";
-import Footer from "./Footer";
+import Footer from "./Footer/Footer";
 import { dataContact } from "../../data/dataContact";
-import Home from "../../pages/Home";
-import Sobre from "../../pages/Sobre";
-import Carros from "../../pages/Carros";
-import Contatos from "../../pages/Contatos";
-import Carrinho from "../../pages/Carrinho";
 import ScrollToTop from "../shared/ScrollToTop";
 import { useEffect } from "react";
 import { reportWebVitals } from "../../reportWebVitals";
+import { routes } from "../../routes";
+
+const styles = {
+  container: "flex flex-col justify-between items-center min-h-screen",
+};
 
 export default function App() {
   useEffect(() => {
     reportWebVitals();
-  });
+  }, []);
 
   return (
-    <div className="flex flex-col justify-between items-center min-h-screen">
+    <div className={styles.container}>
       <Header navBarItems={dataNavBarItems} />
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/sobre" element={<Sobre />} />
-        <Route path="/carrinho" element={<Carrinho />} />
-        <Route path="/carros" element={<Carros />} />
-        <Route path="/contatos" element={<Contatos />} />
+        {routes.map((el) => (
+          <Route key={el.id} path={el.path} element={<el.element />} />
+        ))}
       </Routes>
       <Footer dataContact={dataContact} />
     </div>

@@ -22,8 +22,7 @@ export default function MainMobile(props: {
           </p>
         </div>
         <form
-          action="
-        "
+          action=""
           className="flex flex-col gap-y-10 w-full h-full py-5 text-white-background font-poppins"
         >
           <fieldset className="flex flex-col gap-y-4">

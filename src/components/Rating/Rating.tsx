@@ -4,22 +4,33 @@ import RatingCard from "./RatingCard";
 import type { RateType } from "@/model/types/RateType";
 import Carrousel from "../shared/Carrousel";
 
-export default function Rating(props: { data: Array<RateType> }): ReactElement {
+const styles = {
+  container:
+    "flex flex-col w-full gap-y-5 justify-between items-center font-poppins",
+};
+
+const titleText = "Avaliação dos clientes";
+
+const ratingOptions = (el: RateType, index: number) => ({
+  padding: "6",
+  key: index,
+  name: el.name,
+  image: el.image,
+  rate: el.rate,
+});
+
+type RatingProps = {
+  data: Array<RateType>;
+};
+
+export default function Rating({ data }: RatingProps): ReactElement {
   return (
-    <section className="flex flex-col w-full gap-y-5 justify-between items-center font-poppins">
-      <TitleSection text="Avaliações dos clientes" />
+    <section className={styles.container}>
+      <TitleSection text={titleText} />
       <Carrousel
-        items={props.data}
+        items={data}
         tighter={true}
-        renderItem={(el, index) => (
-          <RatingCard
-            padding="6"
-            key={index}
-            name={el.name}
-            image={el.image}
-            rate={el.rate}
-          />
-        )}
+        renderItem={(el, index) => <RatingCard {...ratingOptions(el, index)} />}
       />
     </section>
   );
